@@ -1,0 +1,120 @@
+[0.089s] Invoking command in '/home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/duser/ros2_kortex-ros2ws/src/ros2_controllers/joint_trajectory_controller -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller
+[0.694s] -- The CXX compiler identification is GNU 11.4.0
+[0.694s] -- Detecting CXX compiler ABI info
+[0.694s] -- Detecting CXX compiler ABI info - done
+[0.695s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.695s] -- Detecting CXX compile features
+[0.695s] -- Detecting CXX compile features - done
+[0.695s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.723s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.967s] -- Found backward_ros: 1.0.2 (/opt/ros/humble/share/backward_ros/cmake)
+[0.981s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[1.001s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[1.002s] -- BACKWARD_HAS_UNWIND=1
+[1.002s] -- BACKWARD_HAS_BACKTRACE=0
+[1.003s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[1.004s] -- BACKWARD_HAS_DW=1
+[1.004s] -- BACKWARD_HAS_BFD=0
+[1.006s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[1.008s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[1.014s] -- Found control_msgs: 4.6.0 (/home/duser/ros2_kortex-ros2ws/install/control_msgs/share/control_msgs/cmake)
+[1.108s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.127s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.156s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.251s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.438s] -- Found control_toolbox: 3.2.0 (/opt/ros/humble/share/control_toolbox/cmake)
+[2.660s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.676s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.794s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.824s] -- Looking for C++ include pthread.h
+[3.081s] -- Looking for C++ include pthread.h - found
+[3.081s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.349s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.351s] -- Found Threads: TRUE  
+[3.740s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[3.809s] -- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[3.992s] -- Found controller_interface: 2.41.0 (/home/duser/ros2_kortex-ros2ws/install/controller_interface/share/controller_interface/cmake)
+[4.975s] -- Found ament_cmake_gmock: 1.3.8 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[4.977s] -- Found controller_manager: 2.41.0 (/home/duser/ros2_kortex-ros2ws/install/controller_manager/share/controller_manager/cmake)
+[5.502s] -- Found ros2_control_test_assets: 2.41.0 (/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake)
+[5.510s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.604s] -- The C compiler identification is GNU 11.4.0
+[5.617s] -- Detecting C compiler ABI info
+[5.826s] -- Detecting C compiler ABI info - done
+[5.839s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.842s] -- Detecting C compile features
+[5.842s] -- Detecting C compile features - done
+[5.854s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[5.855s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.449s] -- Configuring done
+[6.627s] -- Generating done
+[6.641s] -- Build files have been written to: /home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller
+[6.806s] Invoked command in '/home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller' returned '0': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/duser/ros2_kortex-ros2ws/src/ros2_controllers/joint_trajectory_controller -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller
+[6.807s] Invoking command in '/home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller -- -j12 -l12
+[7.073s] [  5%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[7.095s] [ 11%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[7.130s] [ 16%] [34m[1mRunning `/usr/bin/cmake -E copy /home/duser/ros2_kortex-ros2ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/validate_jtc_parameters.hpp /home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller/joint_trajectory_controller_parameters/include/validate_jtc_parameters.hpp`[0m
+[7.152s] [ 22%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[7.262s] [ 27%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller/joint_trajectory_controller_parameters/include//joint_trajectory_controller_parameters.hpp /home/duser/ros2_kortex-ros2ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller_parameters.yaml validate_jtc_parameters.hpp`[0m
+[13.672s] [ 27%] Built target joint_trajectory_controller_parameters
+[14.050s] [ 33%] [32mBuilding CXX object CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o[0m
+[14.121s] [ 38%] [32mBuilding CXX object CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o[0m
+[94.214s] [ 44%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[94.312s] [ 44%] Built target gmock_main
+[154.217s] [ 50%] [32m[1mLinking CXX static library libgmock.a[0m
+[154.287s] [ 50%] Built target gmock
+[164.379s] [ 55%] [32m[1mLinking CXX shared library libjoint_trajectory_controller.so[0m
+[165.179s] [ 55%] Built target joint_trajectory_controller
+[165.231s] [ 61%] [32mBuilding CXX object CMakeFiles/test_trajectory.dir/test/test_trajectory.cpp.o[0m
+[180.973s] [ 66%] [32m[1mLinking CXX executable test_trajectory[0m
+[181.695s] [ 66%] Built target test_trajectory
+[181.762s] [ 72%] [32mBuilding CXX object CMakeFiles/test_trajectory_actions.dir/test/test_trajectory_actions.cpp.o[0m
+[238.067s] [ 77%] [32m[1mLinking CXX executable test_trajectory_actions[0m
+[238.486s] [ 77%] Built target test_trajectory_actions
+[238.526s] [ 83%] [32mBuilding CXX object CMakeFiles/test_load_joint_trajectory_controller.dir/test/test_load_joint_trajectory_controller.cpp.o[0m
+[244.939s] [ 88%] [32m[1mLinking CXX executable test_load_joint_trajectory_controller[0m
+[245.309s] [ 88%] Built target test_load_joint_trajectory_controller
+[245.342s] [ 94%] [32mBuilding CXX object CMakeFiles/test_trajectory_controller.dir/test/test_trajectory_controller.cpp.o[0m
+[285.879s] [100%] [32m[1mLinking CXX executable test_trajectory_controller[0m
+[286.555s] [100%] Built target test_trajectory_controller
+[286.614s] Invoked command in '/home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller' returned '0': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller -- -j12 -l12
+[286.704s] Invoking command in '/home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller
+[286.717s] -- Install configuration: "Release"
+[286.717s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller_parameters
+[286.717s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller_parameters/joint_trajectory_controller_parameters.hpp
+[286.717s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller_parameters/validate_jtc_parameters.hpp
+[286.718s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/joint_trajectory_plugin.xml
+[286.719s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller
+[286.720s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller
+[286.720s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller/validate_jtc_parameters.hpp
+[286.720s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller/trajectory.hpp
+[286.720s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller/visibility_control.h
+[286.721s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller/joint_trajectory_controller.hpp
+[286.721s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller/interpolation_methods.hpp
+[286.721s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller/tolerances.hpp
+[286.722s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/lib/libjoint_trajectory_controller.so
+[286.729s] -- Set runtime path of "/home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/lib/libjoint_trajectory_controller.so" to ""
+[286.729s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/environment/library_path.sh
+[286.730s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/environment/library_path.dsv
+[286.732s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/ament_index/resource_index/package_run_dependencies/joint_trajectory_controller
+[286.733s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/ament_index/resource_index/parent_prefix_path/joint_trajectory_controller
+[286.734s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/environment/ament_prefix_path.sh
+[286.734s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/environment/ament_prefix_path.dsv
+[286.734s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/environment/path.sh
+[286.735s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/environment/path.dsv
+[286.735s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/local_setup.bash
+[286.736s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/local_setup.sh
+[286.736s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/local_setup.zsh
+[286.736s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/local_setup.dsv
+[286.737s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/package.dsv
+[286.738s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/ament_index/resource_index/packages/joint_trajectory_controller
+[286.739s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/joint_trajectory_controller
+[286.740s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/cmake/export_joint_trajectory_controllerExport.cmake
+[286.741s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/cmake/export_joint_trajectory_controllerExport-release.cmake
+[286.742s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/cmake/ament_cmake_export_targets-extras.cmake
+[286.742s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[286.743s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/cmake/joint_trajectory_controllerConfig.cmake
+[286.743s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/cmake/joint_trajectory_controllerConfig-version.cmake
+[286.744s] -- Installing: /home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/share/joint_trajectory_controller/package.xml
+[286.749s] Invoked command in '/home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller' returned '0': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/duser/ros2_kortex-ros2ws/build/joint_trajectory_controller

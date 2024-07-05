@@ -1,0 +1,66 @@
+[0.045s] Invoking command in '/home/duser/ros2_kortex-ros2ws/build/position_controllers': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/forward_command_controller/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/duser/ros2_kortex-ros2ws/src/ros2_controllers/position_controllers -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/duser/ros2_kortex-ros2ws/install/position_controllers
+[0.169s] -- The CXX compiler identification is GNU 11.4.0
+[0.179s] -- Detecting CXX compiler ABI info
+[0.316s] -- Detecting CXX compiler ABI info - done
+[0.328s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.328s] -- Detecting CXX compile features
+[0.328s] -- Detecting CXX compile features - done
+[0.343s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.619s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.794s] -- Found backward_ros: 1.0.2 (/opt/ros/humble/share/backward_ros/cmake)
+[0.809s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.822s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.822s] -- BACKWARD_HAS_UNWIND=1
+[0.822s] -- BACKWARD_HAS_BACKTRACE=0
+[0.822s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.822s] -- BACKWARD_HAS_DW=1
+[0.823s] -- BACKWARD_HAS_BFD=0
+[0.823s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.823s] -- Found forward_command_controller: 2.35.0 (/home/duser/ros2_kortex-ros2ws/install/forward_command_controller/share/forward_command_controller/cmake)
+[0.917s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.932s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.955s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.989s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.027s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.170s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.179s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.252s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.278s] -- Looking for C++ include pthread.h
+[2.491s] -- Looking for C++ include pthread.h - found
+[2.492s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.726s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.727s] -- Found Threads: TRUE  
+[3.204s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[3.481s] -- Found ament_cmake_gmock: 1.3.8 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[3.484s] -- Found controller_manager: 2.41.0 (/home/duser/ros2_kortex-ros2ws/install/controller_manager/share/controller_manager/cmake)
+[3.976s] -- Found ros2_control_test_assets: 2.41.0 (/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake)
+[3.984s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[4.102s] -- The C compiler identification is GNU 11.4.0
+[4.116s] -- Detecting C compiler ABI info
+[4.342s] -- Detecting C compiler ABI info - done
+[4.353s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.353s] -- Detecting C compile features
+[4.354s] -- Detecting C compile features - done
+[4.366s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[4.368s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.126s] -- Configuring done
+[5.308s] -- Generating done
+[5.312s] -- Build files have been written to: /home/duser/ros2_kortex-ros2ws/build/position_controllers
+[5.338s] Invoked command in '/home/duser/ros2_kortex-ros2ws/build/position_controllers' returned '0': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/forward_command_controller/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/duser/ros2_kortex-ros2ws/src/ros2_controllers/position_controllers -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/duser/ros2_kortex-ros2ws/install/position_controllers
+[5.338s] Invoking command in '/home/duser/ros2_kortex-ros2ws/build/position_controllers': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/opt/ros/humble LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/forward_command_controller/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/duser/ros2_kortex-ros2ws/build/position_controllers -- -j12 -l12
+[5.448s] [  9%] [32mBuilding CXX object CMakeFiles/position_controllers.dir/src/joint_group_position_controller.cpp.o[0m
+[10.246s] [ 18%] [32m[1mLinking CXX shared library libposition_controllers.so[0m
+[10.686s] [ 18%] Built target position_controllers
+[10.721s] [ 27%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[19.789s] [ 36%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[23.425s] [ 45%] [32m[1mLinking CXX static library libgmock.a[0m
+[23.516s] [ 45%] Built target gmock
+[23.560s] [ 54%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[25.466s] [ 63%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[25.542s] [ 63%] Built target gmock_main
+[25.589s] [ 72%] [32mBuilding CXX object CMakeFiles/test_load_joint_group_position_controller.dir/test/test_load_joint_group_position_controller.cpp.o[0m
+[33.817s] [ 81%] [32m[1mLinking CXX executable test_load_joint_group_position_controller[0m
+[34.706s] [ 81%] Built target test_load_joint_group_position_controller
+[34.742s] [ 90%] [32mBuilding CXX object CMakeFiles/test_joint_group_position_controller.dir/test/test_joint_group_position_controller.cpp.o[0m
+[46.661s] [100%] [32m[1mLinking CXX executable test_joint_group_position_controller[0m
+[47.070s] [100%] Built target test_joint_group_position_controller

@@ -1,0 +1,1 @@
+Invoking command in '/home/duser/ros2_kortex-ros2ws/build/control_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/duser/ros2_kortex-ros2ws/src/control_msgs/control_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/duser/ros2_kortex-ros2ws/install/control_msgs

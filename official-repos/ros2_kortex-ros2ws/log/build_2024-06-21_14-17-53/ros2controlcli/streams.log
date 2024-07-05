@@ -1,0 +1,84 @@
+[2.154s] Invoking command in '/home/duser/ros2_kortex-ros2ws/src/ros2_control/ros2controlcli': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/build/ros2controlcli/prefix_override:/home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ros2controlcli build --build-base /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build install --record /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/install.log --single-version-externally-managed install_data
+[6.647s] running egg_info
+[6.647s] creating ../../../build/ros2controlcli/ros2controlcli.egg-info
+[6.647s] writing ../../../build/ros2controlcli/ros2controlcli.egg-info/PKG-INFO
+[6.647s] writing dependency_links to ../../../build/ros2controlcli/ros2controlcli.egg-info/dependency_links.txt
+[6.647s] writing entry points to ../../../build/ros2controlcli/ros2controlcli.egg-info/entry_points.txt
+[6.647s] writing requirements to ../../../build/ros2controlcli/ros2controlcli.egg-info/requires.txt
+[6.647s] writing top-level names to ../../../build/ros2controlcli/ros2controlcli.egg-info/top_level.txt
+[6.647s] writing manifest file '../../../build/ros2controlcli/ros2controlcli.egg-info/SOURCES.txt'
+[6.648s] reading manifest file '../../../build/ros2controlcli/ros2controlcli.egg-info/SOURCES.txt'
+[6.648s] writing manifest file '../../../build/ros2controlcli/ros2controlcli.egg-info/SOURCES.txt'
+[6.648s] running build
+[6.648s] running build_py
+[6.648s] creating /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build
+[6.648s] creating /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib
+[6.648s] creating /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli
+[6.648s] copying ros2controlcli/__init__.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli
+[6.648s] creating /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/api
+[6.648s] copying ros2controlcli/api/__init__.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/api
+[6.648s] creating /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/command
+[6.649s] copying ros2controlcli/command/control.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/command
+[6.649s] copying ros2controlcli/command/__init__.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/command
+[6.649s] creating /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.649s] copying ros2controlcli/verb/unload_controller.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.649s] copying ros2controlcli/verb/set_hardware_component_state.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.649s] copying ros2controlcli/verb/list_controller_types.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.649s] copying ros2controlcli/verb/reload_controller_libraries.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.649s] copying ros2controlcli/verb/set_controller_state.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.649s] copying ros2controlcli/verb/__init__.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.649s] copying ros2controlcli/verb/load_controller.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.650s] copying ros2controlcli/verb/list_hardware_interfaces.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.650s] copying ros2controlcli/verb/switch_controllers.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.650s] copying ros2controlcli/verb/view_controller_chains.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.650s] copying ros2controlcli/verb/list_controllers.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.650s] copying ros2controlcli/verb/list_hardware_components.py -> /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb
+[6.650s] running install
+[6.650s] running install_lib
+[6.650s] creating /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli
+[6.650s] creating /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/api
+[6.650s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/api/__init__.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/api
+[6.650s] creating /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command
+[6.651s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/command/control.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command
+[6.651s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/command/__init__.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command
+[6.652s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/__init__.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli
+[6.652s] creating /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.652s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/unload_controller.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.652s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/set_hardware_component_state.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.652s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/list_controller_types.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.652s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/reload_controller_libraries.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.652s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/set_controller_state.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.652s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/__init__.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.652s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/load_controller.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.652s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/list_hardware_interfaces.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.653s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/switch_controllers.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.678s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/view_controller_chains.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.678s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/list_controllers.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.678s] copying /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build/lib/ros2controlcli/verb/list_hardware_components.py -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb
+[6.678s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/api/__init__.py to __init__.cpython-310.pyc
+[6.678s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command/control.py to control.cpython-310.pyc
+[6.678s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/command/__init__.py to __init__.cpython-310.pyc
+[6.678s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/__init__.py to __init__.cpython-310.pyc
+[6.678s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/unload_controller.py to unload_controller.cpython-310.pyc
+[6.679s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/set_hardware_component_state.py to set_hardware_component_state.cpython-310.pyc
+[6.679s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/list_controller_types.py to list_controller_types.cpython-310.pyc
+[6.679s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/reload_controller_libraries.py to reload_controller_libraries.cpython-310.pyc
+[6.679s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/set_controller_state.py to set_controller_state.cpython-310.pyc
+[6.679s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/__init__.py to __init__.cpython-310.pyc
+[6.679s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/load_controller.py to load_controller.cpython-310.pyc
+[6.679s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/list_hardware_interfaces.py to list_hardware_interfaces.cpython-310.pyc
+[6.679s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/switch_controllers.py to switch_controllers.cpython-310.pyc
+[6.679s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/view_controller_chains.py to view_controller_chains.cpython-310.pyc
+[6.680s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/list_controllers.py to list_controllers.cpython-310.pyc
+[6.680s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli/verb/list_hardware_components.py to list_hardware_components.cpython-310.pyc
+[6.680s] running install_data
+[6.680s] copying package.xml -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/share/ros2controlcli
+[6.680s] creating /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/share/ament_index
+[6.680s] creating /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/share/ament_index/resource_index
+[6.680s] creating /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/share/ament_index/resource_index/packages
+[6.680s] copying resource/ros2controlcli -> /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/share/ament_index/resource_index/packages
+[6.680s] running install_egg_info
+[6.680s] Copying ../../../build/ros2controlcli/ros2controlcli.egg-info to /home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages/ros2controlcli-2.41.0-py3.10.egg-info
+[6.680s] running install_scripts
+[6.681s] writing list of installed files to '/home/duser/ros2_kortex-ros2ws/build/ros2controlcli/install.log'
+[6.695s] Invoked command in '/home/duser/ros2_kortex-ros2ws/src/ros2_control/ros2controlcli' returned '0': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/build/ros2controlcli/prefix_override:/home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ros2controlcli build --build-base /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/build install --record /home/duser/ros2_kortex-ros2ws/build/ros2controlcli/install.log --single-version-externally-managed install_data

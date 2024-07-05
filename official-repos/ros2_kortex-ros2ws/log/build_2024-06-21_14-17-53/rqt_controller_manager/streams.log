@@ -1,0 +1,51 @@
+[2.111s] Invoking command in '/home/duser/ros2_kortex-ros2ws/src/ros2_control/rqt_controller_manager': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/prefix_override:/home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/rqt_controller_manager build --build-base /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build install --record /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/install.log --single-version-externally-managed install_data
+[6.610s] running egg_info
+[6.610s] creating ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info
+[6.611s] writing ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/PKG-INFO
+[6.611s] writing dependency_links to ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/dependency_links.txt
+[6.611s] writing entry points to ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/entry_points.txt
+[6.612s] writing requirements to ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/requires.txt
+[6.612s] writing top-level names to ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/top_level.txt
+[6.612s] writing manifest file '../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/SOURCES.txt'
+[6.612s] reading manifest file '../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/SOURCES.txt'
+[6.613s] writing manifest file '../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/SOURCES.txt'
+[6.613s] running build
+[6.613s] running build_py
+[6.613s] creating /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build
+[6.613s] creating /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib
+[6.613s] creating /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[6.613s] copying rqt_controller_manager/main.py -> /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[6.614s] copying rqt_controller_manager/controller_manager.py -> /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[6.614s] copying rqt_controller_manager/__init__.py -> /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[6.614s] copying rqt_controller_manager/update_combo.py -> /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[6.614s] running install
+[6.614s] running install_lib
+[6.614s] creating /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager
+[6.614s] copying /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib/rqt_controller_manager/main.py -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager
+[6.614s] copying /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib/rqt_controller_manager/controller_manager.py -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager
+[6.615s] copying /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib/rqt_controller_manager/__init__.py -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager
+[6.615s] copying /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build/lib/rqt_controller_manager/update_combo.py -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager
+[6.615s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager/main.py to main.cpython-310.pyc
+[6.615s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager/controller_manager.py to controller_manager.cpython-310.pyc
+[6.615s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager/__init__.py to __init__.cpython-310.pyc
+[6.615s] byte-compiling /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager/update_combo.py to update_combo.cpython-310.pyc
+[6.616s] running install_data
+[6.616s] creating /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/ament_index
+[6.616s] creating /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/ament_index/resource_index
+[6.616s] creating /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/ament_index/resource_index/packages
+[6.617s] copying resource/rqt_controller_manager -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/ament_index/resource_index/packages
+[6.625s] copying package.xml -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/rqt_controller_manager
+[6.625s] creating /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[6.625s] copying resource/controller_info.ui -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[6.625s] copying resource/cm_icon.png -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[6.625s] copying resource/led_red.png -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[6.625s] copying resource/led_off.png -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[6.625s] copying resource/led_green.png -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[6.625s] copying resource/controller_manager.ui -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[6.626s] copying plugin.xml -> /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/share/rqt_controller_manager
+[6.626s] running install_egg_info
+[6.626s] Copying ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info to /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages/rqt_controller_manager-2.41.0-py3.10.egg-info
+[6.626s] running install_scripts
+[6.626s] Installing rqt_controller_manager script to /home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/rqt_controller_manager
+[6.626s] writing list of installed files to '/home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/install.log'
+[6.661s] Invoked command in '/home/duser/ros2_kortex-ros2ws/src/ros2_control/rqt_controller_manager' returned '0': AMENT_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/kortex_api LD_LIBRARY_PATH=/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/prefix_override:/home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/rqt_controller_manager build --build-base /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/build install --record /home/duser/ros2_kortex-ros2ws/build/rqt_controller_manager/install.log --single-version-externally-managed install_data

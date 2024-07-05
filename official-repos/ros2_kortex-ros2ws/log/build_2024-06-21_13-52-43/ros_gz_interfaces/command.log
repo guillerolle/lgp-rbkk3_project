@@ -1,0 +1,1 @@
+Invoking command in '/home/duser/ros2_kortex-ros2ws/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/duser/ros2_kortex-ros2ws/ros_ign/ros_gz_interfaces -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/duser/ros2_kortex-ros2ws/install/ros_gz_interfaces

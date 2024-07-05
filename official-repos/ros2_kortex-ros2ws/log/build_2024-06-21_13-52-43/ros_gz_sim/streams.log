@@ -1,0 +1,40 @@
+[0.057s] Invoking command in '/home/duser/ros2_kortex-ros2ws/build/ros_gz_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/duser/ros2_kortex-ros2ws/ros_ign/ros_gz_sim -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/duser/ros2_kortex-ros2ws/install/ros_gz_sim
+[0.239s] -- The C compiler identification is GNU 11.4.0
+[0.419s] -- The CXX compiler identification is GNU 11.4.0
+[0.435s] -- Detecting C compiler ABI info
+[0.596s] -- Detecting C compiler ABI info - done
+[0.610s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.612s] -- Detecting C compile features
+[0.614s] -- Detecting C compile features - done
+[0.618s] -- Detecting CXX compiler ABI info
+[0.808s] -- Detecting CXX compiler ABI info - done
+[0.824s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.825s] -- Detecting CXX compile features
+[0.826s] -- Detecting CXX compile features - done
+[0.833s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.134s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.317s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.415s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.429s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.449s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.480s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.522s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.697s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.705s] [31mCMake Error at /opt/ros/humble/share/rmw_implementation_cmake/cmake/get_default_rmw_implementation.cmake:60 (message):
+[1.708s]   Could not find ROS middleware implementation 'rmw_cyclonedds_cpp'.  Choose
+[1.708s]   one of the following: rmw_fastrtps_cpp
+[1.709s] Call Stack (most recent call first):
+[1.709s]   /opt/ros/humble/share/rmw_implementation/cmake/rmw_implementation-extras.cmake:19 (get_default_rmw_implementation)
+[1.709s]   /opt/ros/humble/share/rmw_implementation/cmake/rmw_implementationConfig.cmake:41 (include)
+[1.709s]   /opt/ros/humble/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.709s]   /opt/ros/humble/share/rcl/cmake/rclConfig.cmake:41 (include)
+[1.709s]   /opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.709s]   /opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)
+[1.710s]   /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.710s]   /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+[1.710s]   CMakeLists.txt:14 (find_package)
+[1.711s] 
+[1.711s] [0m
+[1.711s] -- Configuring incomplete, errors occurred!
+[1.711s] See also "/home/duser/ros2_kortex-ros2ws/build/ros_gz_sim/CMakeFiles/CMakeOutput.log".
+[1.722s] Invoked command in '/home/duser/ros2_kortex-ros2ws/build/ros_gz_sim' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/duser/ros2_kortex-ros2ws/ros_ign/ros_gz_sim -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/duser/ros2_kortex-ros2ws/install/ros_gz_sim
