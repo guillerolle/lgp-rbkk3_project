@@ -1,0 +1,36 @@
+[0.019s] Invoking command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller -- -j12 -l12
+[0.098s] [  6%] Built target mecanum_drive_controller_parameters
+[0.099s] [ 20%] Built target gmock_main
+[0.101s] [ 40%] Built target gmock
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target mecanum_drive_controller[0m
+[0.139s] [ 53%] Built target test_load_mecanum_drive_controller
+[0.147s] [ 60%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[3.107s] [01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type mecanum_drive_controller::MecanumDriveController::update_reference_from_subscribers()[m[K’:
+[3.107s] [01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:392:12:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[3.108s]   392 |     if (std[01;31m[K:[m[Kisnan(current_ref_unstamped->linear.x)){
+[3.108s]       |            [01;31m[K^[m[K
+[3.108s]       |            [32m[K::[m[K
+[3.108s] [01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:395:45:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[3.108s]   395 |       std::string strx = "linear.x = " + std[01;31m[K:[m[Kto_string(current_ref_unstamped->linear.x);
+[3.109s]       |                                             [01;31m[K^[m[K
+[3.109s]       |                                             [32m[K::[m[K
+[3.109s] [01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:399:12:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[3.109s]   399 |     if (std[01;31m[K:[m[Kisnan(current_ref_unstamped->linear.y)){
+[3.109s]       |            [01;31m[K^[m[K
+[3.109s]       |            [32m[K::[m[K
+[3.109s] [01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:402:45:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[3.109s]   402 |       std::string stry = "linear.y = " + std[01;31m[K:[m[Kto_string(current_ref_unstamped->linear.y);
+[3.109s]       |                                             [01;31m[K^[m[K
+[3.109s]       |                                             [32m[K::[m[K
+[3.109s] [01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:406:12:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[3.109s]   406 |     if (std[01;31m[K:[m[Kisnan(current_ref_unstamped->angular.z)){
+[3.109s]       |            [01;31m[K^[m[K
+[3.109s]       |            [32m[K::[m[K
+[3.109s] [01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:409:46:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[3.110s]   409 |       std::string strz = "angular.z = " + std[01;31m[K:[m[Kto_string(current_ref_unstamped->angular.z);
+[3.110s]       |                                              [01;31m[K^[m[K
+[3.110s]       |                                              [32m[K::[m[K
+[6.481s] gmake[2]: *** [CMakeFiles/mecanum_drive_controller.dir/build.make:76: CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o] Error 1
+[6.481s] gmake[1]: *** [CMakeFiles/Makefile2:208: CMakeFiles/mecanum_drive_controller.dir/all] Error 2
+[6.482s] gmake: *** [Makefile:146: all] Error 2
+[6.485s] Invoked command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller -- -j12 -l12

@@ -17,14 +17,16 @@ RUN apt-get update && \
         ros-humble-ros2-control \
         ros-humble-ros2-controllers \
         ros-humble-ign-ros2-control \
+        ros-humble-ign-ros2-control-demos \
         ros-humble-moveit \
         ros-humble-rmw-cyclonedds-cpp \
         ros-humble-picknik-reset-fault-controller \
         ros-humble-picknik-twist-controller \
         ros-humble-rqt* \
-        #ros-humble-kortex-bringup \ # Ignored. Building from source
+        #ros-humble-kortex-bringup \ # Ignored. Building from source to remove gripper hardcoded
         ros-humble-clearpath-desktop \
         ros-humble-clearpath-simulator \
+        #ros-humble-clearpath-control \ # Building from source because it's not being recognised as controller
         && \
     rm -rf /var/lib/apt/lists/*
 

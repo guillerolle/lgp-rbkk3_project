@@ -1,0 +1,6 @@
+[  6%] Built target mecanum_drive_controller_parameters
+[ 20%] Built target gmock_main
+[ 40%] Built target gmock
+[35m[1mConsolidate compiler generated dependencies of target mecanum_drive_controller[0m
+[ 53%] Built target test_load_mecanum_drive_controller
+[ 60%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m

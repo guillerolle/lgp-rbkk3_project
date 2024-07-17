@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="whkk3">
+  <xacro:arg name="name" default="whkk3"/>
+  <!-- Platform -->
+  <xacro:include filename="$(find whkk3_description)/urdf/whkk3_platform.urdf.xacro" />
+
+
+  <!-- Arm -->
+  <xacro:arg name="arm_prefix" default="arm/"/>
+  <xacro:include filename="$(find whkk3_description)/urdf/whkk3_arm.urdf.xacro" ns="kk" />
+
+  <xacro:kk.load_robot
+    parent="whkk3_integration_link"
+    arm="$(arg arm)"
+    gripper="$(arg gripper)"
+    gripper_joint_name="$(arg gripper_joint_name)"
+    gripper_max_velocity="$(arg gripper_max_velocity)"
+    gripper_max_force="$(arg gripper_max_force)"
+    dof="$(arg dof)"
+    vision="$(arg vision)"
+    robot_ip="$(arg robot_ip)"
+    username="$(arg username)"
+    password="$(arg password)"
+    port="$(arg port)"
+    port_realtime="$(arg port_realtime)"
+    session_inactivity_timeout_ms="$(arg session_inactivity_timeout_ms)"
+    connection_inactivity_timeout_ms="$(arg connection_inactivity_timeout_ms)"
+    use_internal_bus_gripper_comm="$(arg use_internal_bus_gripper_comm)"
+    prefix="$(arg arm_prefix)"
+    use_fake_hardware="$(arg use_fake_hardware)"
+    fake_sensor_commands="$(arg fake_sensor_commands)"
+    sim_gazebo="$(arg sim_gazebo)"
+    sim_ignition="$(arg sim_ignition)"
+    sim_isaac="$(arg sim_isaac)"
+    initial_positions="${xacro.load_yaml(initial_positions_file)}" >
+    <origin xyz="0 0 0.005" rpy="0 0 0"/>  <!-- position robot in the world -->
+  </xacro:kk.load_robot>
+
+  <!-- Integration Plate -->
+  <link name="whkk3_integration_link"/>
+  <joint name="whkk3_integration_platform_joint" type="fixed">
+    <origin xyz="0.45 0 0.295" rpy="0 0 0"/>
+    <parent link="chassis_link"/>
+    <child link="whkk3_integration_link"/>
+  </joint>
+  <!--joint name="whkk3_integration_arm_joint" type="fixed">
+    <origin xyz="0 0 0.005" rpy="0 0 0"/>
+    <parent link="whkk3_integration_link"/>
+    <child link="$(arg arm_prefix)base_link"/>
+  </joint-->
+
+  <!-- Links -->
+
+
+  <!-- Mounts -->
+
+
+  <!-- Sensors -->
+
+
+  <!-- Extras -->
+
+
+</robot>

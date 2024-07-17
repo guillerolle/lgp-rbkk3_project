@@ -1,0 +1,21 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/chainable_controller_interface.hpp:20[m[K,
+                 from [01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller.hpp:26[m[K,
+                 from [01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:15[m[K:
+[01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::InterfaceConfiguration mecanum_drive_controller::MecanumDriveController::command_interface_configuration() const[m[K’:
+[01m[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:269:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kdo[m[K’
+  269 |     [01;31m[KRCLCPP_INFO[m[K(get_node()->get_logger(), mystr.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mecanum_drive_controller.dir/build.make:76: CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:208: CMakeFiles/mecanum_drive_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

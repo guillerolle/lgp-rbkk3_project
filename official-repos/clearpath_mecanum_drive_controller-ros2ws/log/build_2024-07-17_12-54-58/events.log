@@ -1,0 +1,341 @@
+[0.000000] (-) TimerEvent: {}
+[0.000350] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.000421] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.029034] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.030960] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'build'}
+[0.031015] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller', '--', '-j12', '-l12'], 'cwd': '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller', 'env': OrderedDict([('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('HOSTNAME', 'guillermo-ideapad3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib:/home/duser/ros2_kortex-ros2ws/install/velocity_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/tricycle_steering_controller/lib:/home/duser/ros2_kortex-ros2ws/install/tricycle_controller/lib:/home/duser/ros2_kortex-ros2ws/install/transmission_interface/lib:/home/duser/ros2_kortex-ros2ws/install/bicycle_steering_controller/lib:/home/duser/ros2_kortex-ros2ws/install/ackermann_steering_controller/lib:/home/duser/ros2_kortex-ros2ws/install/steering_controllers_library/lib:/home/duser/ros2_kortex-ros2ws/install/robotiq_driver/lib:/home/duser/ros2_kortex-ros2ws/install/serial/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/robotiq_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/range_sensor_broadcaster/lib:/home/duser/ros2_kortex-ros2ws/install/position_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/kortex_driver/lib:/home/duser/ros2_kortex-ros2ws/install/admittance_controller/lib:/home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/lib:/home/duser/ros2_kortex-ros2ws/install/joint_state_broadcaster/lib:/home/duser/ros2_kortex-ros2ws/install/imu_sensor_broadcaster/lib:/home/duser/ros2_kortex-ros2ws/install/gripper_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/effort_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/forward_command_controller/lib:/home/duser/ros2_kortex-ros2ws/install/force_torque_sensor_broadcaster/lib:/home/duser/ros2_kortex-ros2ws/install/diff_drive_controller/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/duser'), ('OLDPWD', '/home/duser'), ('ROS_PYTHON_VERSION', '3'), ('ROS_LOG_DIR', '/home/duser/rbkk3-ros2ws/log'), ('COLCON_PREFIX_PATH', '/home/duser/rbkk3-ros2ws/install:/home/duser/clearpath_mecanum_drive_controller-ros2ws/install:/home/duser/ros2_kortex-ros2ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('AMENT_PREFIX_PATH', '/home/duser/rbkk3-ros2ws/install/whkk3_simulation:/home/duser/rbkk3-ros2ws/install/whkk3_description:/home/duser/rbkk3-ros2ws/install/ridgeback_simulation:/home/duser/rbkk3-ros2ws/install/ridgeback_hardware:/home/duser/rbkk3-ros2ws/install/ridgeback_description:/home/duser/rbkk3-ros2ws/install/rbkk3_simulation:/home/duser/rbkk3-ros2ws/install/rbkk3_rviz:/home/duser/rbkk3-ros2ws/install/rbkk3_description:/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/home/duser/ros2_kortex-ros2ws/install/kortex_bringup:/home/duser/ros2_kortex-ros2ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/duser/ros2_kortex-ros2ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/duser/ros2_kortex-ros2ws/install/kortex_description:/home/duser/ros2_kortex-ros2ws/install/robotiq_description:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers:/home/duser/ros2_kortex-ros2ws/install/velocity_controllers:/home/duser/ros2_kortex-ros2ws/install/tricycle_steering_controller:/home/duser/ros2_kortex-ros2ws/install/tricycle_controller:/home/duser/ros2_kortex-ros2ws/install/ros2_control:/home/duser/ros2_kortex-ros2ws/install/transmission_interface:/home/duser/ros2_kortex-ros2ws/install/bicycle_steering_controller:/home/duser/ros2_kortex-ros2ws/install/ackermann_steering_controller:/home/duser/ros2_kortex-ros2ws/install/steering_controllers_library:/home/duser/ros2_kortex-ros2ws/install/robotiq_hardware_tests:/home/duser/ros2_kortex-ros2ws/install/robotiq_driver:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/rqt_joint_trajectory_controller:/home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager:/home/duser/ros2_kortex-ros2ws/install/ros2controlcli:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers_test_nodes:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/robotiq_controllers:/home/duser/ros2_kortex-ros2ws/install/range_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/position_controllers:/home/duser/ros2_kortex-ros2ws/install/kortex_driver:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/home/duser/ros2_kortex-ros2ws/install/admittance_controller:/home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller:/home/duser/ros2_kortex-ros2ws/install/joint_state_broadcaster:/home/duser/ros2_kortex-ros2ws/install/joint_limits:/home/duser/ros2_kortex-ros2ws/install/imu_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/gripper_controllers:/home/duser/ros2_kortex-ros2ws/install/effort_controllers:/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/force_torque_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/diff_drive_controller:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/opt/ros/humble'), ('PWD', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/duser/rbkk3-ros2ws/build/whkk3_simulation:/home/duser/rbkk3-ros2ws/install/whkk3_simulation/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/whkk3_description:/home/duser/rbkk3-ros2ws/install/whkk3_description/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/ridgeback_simulation:/home/duser/rbkk3-ros2ws/install/ridgeback_simulation/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/ridgeback_hardware:/home/duser/rbkk3-ros2ws/install/ridgeback_hardware/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/ridgeback_description:/home/duser/rbkk3-ros2ws/install/ridgeback_description/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/rbkk3_simulation:/home/duser/rbkk3-ros2ws/install/rbkk3_simulation/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/rbkk3_rviz:/home/duser/rbkk3-ros2ws/install/rbkk3_rviz/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/rbkk3_description:/home/duser/rbkk3-ros2ws/install/rbkk3_description/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/home/duser/ros2_kortex-ros2ws/install/kortex_bringup:/home/duser/ros2_kortex-ros2ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/duser/ros2_kortex-ros2ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/duser/ros2_kortex-ros2ws/install/kortex_description:/home/duser/ros2_kortex-ros2ws/install/robotiq_description:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers:/home/duser/ros2_kortex-ros2ws/install/velocity_controllers:/home/duser/ros2_kortex-ros2ws/install/tricycle_steering_controller:/home/duser/ros2_kortex-ros2ws/install/tricycle_controller:/home/duser/ros2_kortex-ros2ws/install/ros2_control:/home/duser/ros2_kortex-ros2ws/install/transmission_interface:/home/duser/ros2_kortex-ros2ws/install/bicycle_steering_controller:/home/duser/ros2_kortex-ros2ws/install/ackermann_steering_controller:/home/duser/ros2_kortex-ros2ws/install/steering_controllers_library:/home/duser/ros2_kortex-ros2ws/install/robotiq_hardware_tests:/home/duser/ros2_kortex-ros2ws/install/robotiq_driver:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/robotiq_controllers:/home/duser/ros2_kortex-ros2ws/install/range_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/position_controllers:/home/duser/ros2_kortex-ros2ws/install/kortex_driver:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/home/duser/ros2_kortex-ros2ws/install/admittance_controller:/home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller:/home/duser/ros2_kortex-ros2ws/install/joint_state_broadcaster:/home/duser/ros2_kortex-ros2ws/install/joint_limits:/home/duser/ros2_kortex-ros2ws/install/imu_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/gripper_controllers:/home/duser/ros2_kortex-ros2ws/install/effort_controllers:/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/force_torque_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/diff_drive_controller:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/rbkk3-ros2ws/install/whkk3_simulation:/home/duser/rbkk3-ros2ws/install/whkk3_description:/home/duser/rbkk3-ros2ws/install/ridgeback_simulation:/home/duser/rbkk3-ros2ws/install/ridgeback_hardware:/home/duser/rbkk3-ros2ws/install/ridgeback_description:/home/duser/rbkk3-ros2ws/install/rbkk3_simulation:/home/duser/rbkk3-ros2ws/install/rbkk3_rviz:/home/duser/rbkk3-ros2ws/install/rbkk3_description:/home/duser/ros2_kortex-ros2ws/install/rqt_joint_trajectory_controller:/home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager:/home/duser/ros2_kortex-ros2ws/install/ros2controlcli:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers_test_nodes:/opt/ros/humble')]), 'shell': False}
+[0.099084] (-) TimerEvent: {}
+[0.199467] (-) TimerEvent: {}
+[0.228204] (mecanum_drive_controller) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller/mecanum_drive_controller_parameters/include//mecanum_drive_controller_parameters.hpp /home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.yaml `\x1b[0m\n'}
+[0.236595] (mecanum_drive_controller) StdoutLine: {'line': b'[ 20%] Built target gmock_main\n'}
+[0.242143] (mecanum_drive_controller) StdoutLine: {'line': b'[ 40%] Built target gmock\n'}
+[0.299575] (-) TimerEvent: {}
+[0.307319] (mecanum_drive_controller) StdoutLine: {'line': b'[ 53%] Built target test_load_mecanum_drive_controller\n'}
+[0.399717] (-) TimerEvent: {}
+[0.500032] (-) TimerEvent: {}
+[0.600373] (-) TimerEvent: {}
+[0.652886] (mecanum_drive_controller) StdoutLine: {'line': b'[ 53%] Built target mecanum_drive_controller_parameters\n'}
+[0.679582] (mecanum_drive_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mecanum_drive_controller\x1b[0m\n'}
+[0.700499] (-) TimerEvent: {}
+[0.722480] (mecanum_drive_controller) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[0.800879] (-) TimerEvent: {}
+[0.901314] (-) TimerEvent: {}
+[1.001796] (-) TimerEvent: {}
+[1.102226] (-) TimerEvent: {}
+[1.202670] (-) TimerEvent: {}
+[1.303100] (-) TimerEvent: {}
+[1.403558] (-) TimerEvent: {}
+[1.504038] (-) TimerEvent: {}
+[1.604422] (-) TimerEvent: {}
+[1.704810] (-) TimerEvent: {}
+[1.805314] (-) TimerEvent: {}
+[1.906015] (-) TimerEvent: {}
+[2.006525] (-) TimerEvent: {}
+[2.107034] (-) TimerEvent: {}
+[2.207549] (-) TimerEvent: {}
+[2.308035] (-) TimerEvent: {}
+[2.408476] (-) TimerEvent: {}
+[2.508988] (-) TimerEvent: {}
+[2.609515] (-) TimerEvent: {}
+[2.710002] (-) TimerEvent: {}
+[2.810396] (-) TimerEvent: {}
+[2.910781] (-) TimerEvent: {}
+[3.011143] (-) TimerEvent: {}
+[3.111559] (-) TimerEvent: {}
+[3.212057] (-) TimerEvent: {}
+[3.312472] (-) TimerEvent: {}
+[3.412820] (-) TimerEvent: {}
+[3.513220] (-) TimerEvent: {}
+[3.613539] (-) TimerEvent: {}
+[3.713978] (-) TimerEvent: {}
+[3.814412] (-) TimerEvent: {}
+[3.914762] (-) TimerEvent: {}
+[4.015088] (-) TimerEvent: {}
+[4.115407] (-) TimerEvent: {}
+[4.215719] (-) TimerEvent: {}
+[4.316145] (-) TimerEvent: {}
+[4.416590] (-) TimerEvent: {}
+[4.517039] (-) TimerEvent: {}
+[4.617476] (-) TimerEvent: {}
+[4.717906] (-) TimerEvent: {}
+[4.818259] (-) TimerEvent: {}
+[4.918703] (-) TimerEvent: {}
+[5.019154] (-) TimerEvent: {}
+[5.119589] (-) TimerEvent: {}
+[5.220028] (-) TimerEvent: {}
+[5.320479] (-) TimerEvent: {}
+[5.420908] (-) TimerEvent: {}
+[5.521334] (-) TimerEvent: {}
+[5.621772] (-) TimerEvent: {}
+[5.722172] (-) TimerEvent: {}
+[5.822580] (-) TimerEvent: {}
+[5.922975] (-) TimerEvent: {}
+[6.023421] (-) TimerEvent: {}
+[6.123846] (-) TimerEvent: {}
+[6.224282] (-) TimerEvent: {}
+[6.324726] (-) TimerEvent: {}
+[6.425171] (-) TimerEvent: {}
+[6.525601] (-) TimerEvent: {}
+[6.626056] (-) TimerEvent: {}
+[6.726498] (-) TimerEvent: {}
+[6.826935] (-) TimerEvent: {}
+[6.927306] (-) TimerEvent: {}
+[7.027646] (-) TimerEvent: {}
+[7.128039] (-) TimerEvent: {}
+[7.228384] (-) TimerEvent: {}
+[7.328941] (-) TimerEvent: {}
+[7.429340] (-) TimerEvent: {}
+[7.529670] (-) TimerEvent: {}
+[7.630161] (-) TimerEvent: {}
+[7.730657] (-) TimerEvent: {}
+[7.831152] (-) TimerEvent: {}
+[7.931649] (-) TimerEvent: {}
+[8.032093] (-) TimerEvent: {}
+[8.132497] (-) TimerEvent: {}
+[8.232975] (-) TimerEvent: {}
+[8.333432] (-) TimerEvent: {}
+[8.433962] (-) TimerEvent: {}
+[8.534421] (-) TimerEvent: {}
+[8.634793] (-) TimerEvent: {}
+[8.735194] (-) TimerEvent: {}
+[8.835627] (-) TimerEvent: {}
+[8.936001] (-) TimerEvent: {}
+[9.036379] (-) TimerEvent: {}
+[9.136729] (-) TimerEvent: {}
+[9.237052] (-) TimerEvent: {}
+[9.337455] (-) TimerEvent: {}
+[9.437892] (-) TimerEvent: {}
+[9.538350] (-) TimerEvent: {}
+[9.638816] (-) TimerEvent: {}
+[9.739257] (-) TimerEvent: {}
+[9.839699] (-) TimerEvent: {}
+[9.940103] (-) TimerEvent: {}
+[10.040574] (-) TimerEvent: {}
+[10.141033] (-) TimerEvent: {}
+[10.241439] (-) TimerEvent: {}
+[10.341945] (-) TimerEvent: {}
+[10.442417] (-) TimerEvent: {}
+[10.542867] (-) TimerEvent: {}
+[10.643394] (-) TimerEvent: {}
+[10.743900] (-) TimerEvent: {}
+[10.844353] (-) TimerEvent: {}
+[10.944676] (-) TimerEvent: {}
+[11.045018] (-) TimerEvent: {}
+[11.145545] (-) TimerEvent: {}
+[11.246055] (-) TimerEvent: {}
+[11.346555] (-) TimerEvent: {}
+[11.447087] (-) TimerEvent: {}
+[11.547593] (-) TimerEvent: {}
+[11.648049] (-) TimerEvent: {}
+[11.748421] (-) TimerEvent: {}
+[11.848899] (-) TimerEvent: {}
+[11.949420] (-) TimerEvent: {}
+[12.050059] (-) TimerEvent: {}
+[12.150580] (-) TimerEvent: {}
+[12.251096] (-) TimerEvent: {}
+[12.351547] (-) TimerEvent: {}
+[12.452090] (-) TimerEvent: {}
+[12.552544] (-) TimerEvent: {}
+[12.638376] (mecanum_drive_controller) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libmecanum_drive_controller.so\x1b[0m\n'}
+[12.652680] (-) TimerEvent: {}
+[12.753064] (-) TimerEvent: {}
+[12.853503] (-) TimerEvent: {}
+[12.954084] (-) TimerEvent: {}
+[13.054555] (-) TimerEvent: {}
+[13.155051] (-) TimerEvent: {}
+[13.255631] (-) TimerEvent: {}
+[13.356205] (-) TimerEvent: {}
+[13.456752] (-) TimerEvent: {}
+[13.557261] (-) TimerEvent: {}
+[13.657649] (-) TimerEvent: {}
+[13.758057] (-) TimerEvent: {}
+[13.858448] (-) TimerEvent: {}
+[13.949773] (mecanum_drive_controller) StdoutLine: {'line': b'[ 73%] Built target mecanum_drive_controller\n'}
+[13.958572] (-) TimerEvent: {}
+[14.001834] (mecanum_drive_controller) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller_preceeding.dir/test/test_mecanum_drive_controller_preceeding.cpp.o\x1b[0m\n'}
+[14.002026] (mecanum_drive_controller) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller.dir/test/test_mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[14.058721] (-) TimerEvent: {}
+[14.159105] (-) TimerEvent: {}
+[14.259449] (-) TimerEvent: {}
+[14.359737] (-) TimerEvent: {}
+[14.460056] (-) TimerEvent: {}
+[14.560628] (-) TimerEvent: {}
+[14.661222] (-) TimerEvent: {}
+[14.761815] (-) TimerEvent: {}
+[14.862177] (-) TimerEvent: {}
+[14.962498] (-) TimerEvent: {}
+[15.062816] (-) TimerEvent: {}
+[15.163206] (-) TimerEvent: {}
+[15.263605] (-) TimerEvent: {}
+[15.364006] (-) TimerEvent: {}
+[15.464363] (-) TimerEvent: {}
+[15.564784] (-) TimerEvent: {}
+[15.665259] (-) TimerEvent: {}
+[15.765641] (-) TimerEvent: {}
+[15.866101] (-) TimerEvent: {}
+[15.966543] (-) TimerEvent: {}
+[16.066984] (-) TimerEvent: {}
+[16.167379] (-) TimerEvent: {}
+[16.267835] (-) TimerEvent: {}
+[16.368233] (-) TimerEvent: {}
+[16.468628] (-) TimerEvent: {}
+[16.569073] (-) TimerEvent: {}
+[16.669511] (-) TimerEvent: {}
+[16.770096] (-) TimerEvent: {}
+[16.870676] (-) TimerEvent: {}
+[16.971291] (-) TimerEvent: {}
+[17.071684] (-) TimerEvent: {}
+[17.172229] (-) TimerEvent: {}
+[17.272560] (-) TimerEvent: {}
+[17.372934] (-) TimerEvent: {}
+[17.473524] (-) TimerEvent: {}
+[17.573981] (-) TimerEvent: {}
+[17.674400] (-) TimerEvent: {}
+[17.774801] (-) TimerEvent: {}
+[17.875224] (-) TimerEvent: {}
+[17.975622] (-) TimerEvent: {}
+[18.076028] (-) TimerEvent: {}
+[18.176342] (-) TimerEvent: {}
+[18.276727] (-) TimerEvent: {}
+[18.377472] (-) TimerEvent: {}
+[18.477914] (-) TimerEvent: {}
+[18.578342] (-) TimerEvent: {}
+[18.678730] (-) TimerEvent: {}
+[18.779188] (-) TimerEvent: {}
+[18.879624] (-) TimerEvent: {}
+[18.979981] (-) TimerEvent: {}
+[19.080409] (-) TimerEvent: {}
+[19.180843] (-) TimerEvent: {}
+[19.281216] (-) TimerEvent: {}
+[19.381590] (-) TimerEvent: {}
+[19.481950] (-) TimerEvent: {}
+[19.582339] (-) TimerEvent: {}
+[19.682685] (-) TimerEvent: {}
+[19.783005] (-) TimerEvent: {}
+[19.883454] (-) TimerEvent: {}
+[19.983820] (-) TimerEvent: {}
+[20.084303] (-) TimerEvent: {}
+[20.184715] (-) TimerEvent: {}
+[20.285051] (-) TimerEvent: {}
+[20.385438] (-) TimerEvent: {}
+[20.485775] (-) TimerEvent: {}
+[20.586073] (-) TimerEvent: {}
+[20.686410] (-) TimerEvent: {}
+[20.705432] (mecanum_drive_controller) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable test_mecanum_drive_controller_preceeding\x1b[0m\n'}
+[20.786552] (-) TimerEvent: {}
+[20.886991] (-) TimerEvent: {}
+[20.987442] (-) TimerEvent: {}
+[21.087885] (-) TimerEvent: {}
+[21.188345] (-) TimerEvent: {}
+[21.288805] (-) TimerEvent: {}
+[21.389260] (-) TimerEvent: {}
+[21.489732] (-) TimerEvent: {}
+[21.590189] (-) TimerEvent: {}
+[21.690618] (-) TimerEvent: {}
+[21.791062] (-) TimerEvent: {}
+[21.891509] (-) TimerEvent: {}
+[21.992246] (-) TimerEvent: {}
+[22.092664] (-) TimerEvent: {}
+[22.182396] (mecanum_drive_controller) StdoutLine: {'line': b'[ 93%] Built target test_mecanum_drive_controller_preceeding\n'}
+[22.192788] (-) TimerEvent: {}
+[22.293137] (-) TimerEvent: {}
+[22.393596] (-) TimerEvent: {}
+[22.494191] (-) TimerEvent: {}
+[22.594647] (-) TimerEvent: {}
+[22.695077] (-) TimerEvent: {}
+[22.795496] (-) TimerEvent: {}
+[22.895928] (-) TimerEvent: {}
+[22.996284] (-) TimerEvent: {}
+[23.096599] (-) TimerEvent: {}
+[23.196970] (-) TimerEvent: {}
+[23.297290] (-) TimerEvent: {}
+[23.397630] (-) TimerEvent: {}
+[23.498155] (-) TimerEvent: {}
+[23.598673] (-) TimerEvent: {}
+[23.699105] (-) TimerEvent: {}
+[23.799567] (-) TimerEvent: {}
+[23.900010] (-) TimerEvent: {}
+[24.000400] (-) TimerEvent: {}
+[24.100844] (-) TimerEvent: {}
+[24.201334] (-) TimerEvent: {}
+[24.301768] (-) TimerEvent: {}
+[24.402114] (-) TimerEvent: {}
+[24.502556] (-) TimerEvent: {}
+[24.603036] (-) TimerEvent: {}
+[24.703627] (-) TimerEvent: {}
+[24.804332] (-) TimerEvent: {}
+[24.904905] (-) TimerEvent: {}
+[25.005411] (-) TimerEvent: {}
+[25.105783] (-) TimerEvent: {}
+[25.206289] (-) TimerEvent: {}
+[25.306752] (-) TimerEvent: {}
+[25.407185] (-) TimerEvent: {}
+[25.507561] (-) TimerEvent: {}
+[25.607932] (-) TimerEvent: {}
+[25.708348] (-) TimerEvent: {}
+[25.808745] (-) TimerEvent: {}
+[25.909143] (-) TimerEvent: {}
+[26.009570] (-) TimerEvent: {}
+[26.110157] (-) TimerEvent: {}
+[26.162170] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_mecanum_drive_controller\x1b[0m\n'}
+[26.210326] (-) TimerEvent: {}
+[26.310769] (-) TimerEvent: {}
+[26.411267] (-) TimerEvent: {}
+[26.511781] (-) TimerEvent: {}
+[26.612325] (-) TimerEvent: {}
+[26.712859] (-) TimerEvent: {}
+[26.813392] (-) TimerEvent: {}
+[26.913896] (-) TimerEvent: {}
+[27.014327] (-) TimerEvent: {}
+[27.114880] (-) TimerEvent: {}
+[27.215404] (-) TimerEvent: {}
+[27.315933] (-) TimerEvent: {}
+[27.416432] (-) TimerEvent: {}
+[27.516876] (-) TimerEvent: {}
+[27.617275] (-) TimerEvent: {}
+[27.717657] (-) TimerEvent: {}
+[27.817987] (-) TimerEvent: {}
+[27.895134] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] Built target test_mecanum_drive_controller\n'}
+[27.914110] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[27.918082] (-) TimerEvent: {}
+[28.018305] (-) TimerEvent: {}
+[28.019037] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'install'}
+[28.035480] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller'], 'cwd': '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller', 'env': OrderedDict([('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('HOSTNAME', 'guillermo-ideapad3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib:/home/duser/ros2_kortex-ros2ws/install/velocity_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/tricycle_steering_controller/lib:/home/duser/ros2_kortex-ros2ws/install/tricycle_controller/lib:/home/duser/ros2_kortex-ros2ws/install/transmission_interface/lib:/home/duser/ros2_kortex-ros2ws/install/bicycle_steering_controller/lib:/home/duser/ros2_kortex-ros2ws/install/ackermann_steering_controller/lib:/home/duser/ros2_kortex-ros2ws/install/steering_controllers_library/lib:/home/duser/ros2_kortex-ros2ws/install/robotiq_driver/lib:/home/duser/ros2_kortex-ros2ws/install/serial/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager/lib:/home/duser/ros2_kortex-ros2ws/install/robotiq_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/range_sensor_broadcaster/lib:/home/duser/ros2_kortex-ros2ws/install/position_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/kortex_driver/lib:/home/duser/ros2_kortex-ros2ws/install/admittance_controller/lib:/home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller/lib:/home/duser/ros2_kortex-ros2ws/install/joint_state_broadcaster/lib:/home/duser/ros2_kortex-ros2ws/install/imu_sensor_broadcaster/lib:/home/duser/ros2_kortex-ros2ws/install/gripper_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/effort_controllers/lib:/home/duser/ros2_kortex-ros2ws/install/forward_command_controller/lib:/home/duser/ros2_kortex-ros2ws/install/force_torque_sensor_broadcaster/lib:/home/duser/ros2_kortex-ros2ws/install/diff_drive_controller/lib:/home/duser/ros2_kortex-ros2ws/install/controller_interface/lib:/home/duser/ros2_kortex-ros2ws/install/hardware_interface/lib:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/lib:/home/duser/ros2_kortex-ros2ws/install/control_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/duser'), ('OLDPWD', '/home/duser'), ('ROS_PYTHON_VERSION', '3'), ('ROS_LOG_DIR', '/home/duser/rbkk3-ros2ws/log'), ('COLCON_PREFIX_PATH', '/home/duser/rbkk3-ros2ws/install:/home/duser/clearpath_mecanum_drive_controller-ros2ws/install:/home/duser/ros2_kortex-ros2ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('AMENT_PREFIX_PATH', '/home/duser/rbkk3-ros2ws/install/whkk3_simulation:/home/duser/rbkk3-ros2ws/install/whkk3_description:/home/duser/rbkk3-ros2ws/install/ridgeback_simulation:/home/duser/rbkk3-ros2ws/install/ridgeback_hardware:/home/duser/rbkk3-ros2ws/install/ridgeback_description:/home/duser/rbkk3-ros2ws/install/rbkk3_simulation:/home/duser/rbkk3-ros2ws/install/rbkk3_rviz:/home/duser/rbkk3-ros2ws/install/rbkk3_description:/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/home/duser/ros2_kortex-ros2ws/install/kortex_bringup:/home/duser/ros2_kortex-ros2ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/duser/ros2_kortex-ros2ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/duser/ros2_kortex-ros2ws/install/kortex_description:/home/duser/ros2_kortex-ros2ws/install/robotiq_description:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers:/home/duser/ros2_kortex-ros2ws/install/velocity_controllers:/home/duser/ros2_kortex-ros2ws/install/tricycle_steering_controller:/home/duser/ros2_kortex-ros2ws/install/tricycle_controller:/home/duser/ros2_kortex-ros2ws/install/ros2_control:/home/duser/ros2_kortex-ros2ws/install/transmission_interface:/home/duser/ros2_kortex-ros2ws/install/bicycle_steering_controller:/home/duser/ros2_kortex-ros2ws/install/ackermann_steering_controller:/home/duser/ros2_kortex-ros2ws/install/steering_controllers_library:/home/duser/ros2_kortex-ros2ws/install/robotiq_hardware_tests:/home/duser/ros2_kortex-ros2ws/install/robotiq_driver:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/rqt_joint_trajectory_controller:/home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager:/home/duser/ros2_kortex-ros2ws/install/ros2controlcli:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers_test_nodes:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/robotiq_controllers:/home/duser/ros2_kortex-ros2ws/install/range_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/position_controllers:/home/duser/ros2_kortex-ros2ws/install/kortex_driver:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/home/duser/ros2_kortex-ros2ws/install/admittance_controller:/home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller:/home/duser/ros2_kortex-ros2ws/install/joint_state_broadcaster:/home/duser/ros2_kortex-ros2ws/install/joint_limits:/home/duser/ros2_kortex-ros2ws/install/imu_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/gripper_controllers:/home/duser/ros2_kortex-ros2ws/install/effort_controllers:/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/force_torque_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/diff_drive_controller:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/opt/ros/humble'), ('PWD', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/duser/rbkk3-ros2ws/build/whkk3_simulation:/home/duser/rbkk3-ros2ws/install/whkk3_simulation/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/whkk3_description:/home/duser/rbkk3-ros2ws/install/whkk3_description/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/ridgeback_simulation:/home/duser/rbkk3-ros2ws/install/ridgeback_simulation/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/ridgeback_hardware:/home/duser/rbkk3-ros2ws/install/ridgeback_hardware/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/ridgeback_description:/home/duser/rbkk3-ros2ws/install/ridgeback_description/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/rbkk3_simulation:/home/duser/rbkk3-ros2ws/install/rbkk3_simulation/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/rbkk3_rviz:/home/duser/rbkk3-ros2ws/install/rbkk3_rviz/lib/python3.10/site-packages:/home/duser/rbkk3-ros2ws/build/rbkk3_description:/home/duser/rbkk3-ros2ws/install/rbkk3_description/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/ros2controlcli/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/duser/ros2_kortex-ros2ws/install/control_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/home/duser/ros2_kortex-ros2ws/install/kortex_bringup:/home/duser/ros2_kortex-ros2ws/install/kinova_gen3_7dof_robotiq_2f_85_moveit_config:/home/duser/ros2_kortex-ros2ws/install/kinova_gen3_6dof_robotiq_2f_85_moveit_config:/home/duser/ros2_kortex-ros2ws/install/kortex_description:/home/duser/ros2_kortex-ros2ws/install/robotiq_description:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers:/home/duser/ros2_kortex-ros2ws/install/velocity_controllers:/home/duser/ros2_kortex-ros2ws/install/tricycle_steering_controller:/home/duser/ros2_kortex-ros2ws/install/tricycle_controller:/home/duser/ros2_kortex-ros2ws/install/ros2_control:/home/duser/ros2_kortex-ros2ws/install/transmission_interface:/home/duser/ros2_kortex-ros2ws/install/bicycle_steering_controller:/home/duser/ros2_kortex-ros2ws/install/ackermann_steering_controller:/home/duser/ros2_kortex-ros2ws/install/steering_controllers_library:/home/duser/ros2_kortex-ros2ws/install/robotiq_hardware_tests:/home/duser/ros2_kortex-ros2ws/install/robotiq_driver:/home/duser/ros2_kortex-ros2ws/install/serial:/home/duser/ros2_kortex-ros2ws/install/hardware_interface_testing:/home/duser/ros2_kortex-ros2ws/install/controller_manager:/home/duser/ros2_kortex-ros2ws/install/ros2_control_test_assets:/home/duser/ros2_kortex-ros2ws/install/robotiq_controllers:/home/duser/ros2_kortex-ros2ws/install/range_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/position_controllers:/home/duser/ros2_kortex-ros2ws/install/kortex_driver:/home/duser/ros2_kortex-ros2ws/install/kortex_api:/home/duser/ros2_kortex-ros2ws/install/admittance_controller:/home/duser/ros2_kortex-ros2ws/install/joint_trajectory_controller:/home/duser/ros2_kortex-ros2ws/install/joint_state_broadcaster:/home/duser/ros2_kortex-ros2ws/install/joint_limits:/home/duser/ros2_kortex-ros2ws/install/imu_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/gripper_controllers:/home/duser/ros2_kortex-ros2ws/install/effort_controllers:/home/duser/ros2_kortex-ros2ws/install/forward_command_controller:/home/duser/ros2_kortex-ros2ws/install/force_torque_sensor_broadcaster:/home/duser/ros2_kortex-ros2ws/install/diff_drive_controller:/home/duser/ros2_kortex-ros2ws/install/controller_interface:/home/duser/ros2_kortex-ros2ws/install/hardware_interface:/home/duser/ros2_kortex-ros2ws/install/controller_manager_msgs:/home/duser/ros2_kortex-ros2ws/install/control_msgs:/home/duser/rbkk3-ros2ws/install/whkk3_simulation:/home/duser/rbkk3-ros2ws/install/whkk3_description:/home/duser/rbkk3-ros2ws/install/ridgeback_simulation:/home/duser/rbkk3-ros2ws/install/ridgeback_hardware:/home/duser/rbkk3-ros2ws/install/ridgeback_description:/home/duser/rbkk3-ros2ws/install/rbkk3_simulation:/home/duser/rbkk3-ros2ws/install/rbkk3_rviz:/home/duser/rbkk3-ros2ws/install/rbkk3_description:/home/duser/ros2_kortex-ros2ws/install/rqt_joint_trajectory_controller:/home/duser/ros2_kortex-ros2ws/install/rqt_controller_manager:/home/duser/ros2_kortex-ros2ws/install/ros2controlcli:/home/duser/ros2_kortex-ros2ws/install/ros2_controllers_test_nodes:/opt/ros/humble')]), 'shell': False}
+[28.050374] (mecanum_drive_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[28.050626] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters\n'}
+[28.051370] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters/mecanum_drive_controller_parameters.hpp\n'}
+[28.052134] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml\n'}
+[28.053569] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller\n'}
+[28.053851] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller\n'}
+[28.054086] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp\n'}
+[28.054233] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h\n'}
+[28.054310] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp\n'}
+[28.054967] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so\n'}
+[28.077018] (mecanum_drive_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""\n'}
+[28.078744] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh\n'}
+[28.079044] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv\n'}
+[28.080223] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller\n'}
+[28.080480] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller\n'}
+[28.081555] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh\n'}
+[28.081789] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv\n'}
+[28.081881] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh\n'}
+[28.081988] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv\n'}
+[28.082051] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash\n'}
+[28.082124] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh\n'}
+[28.082200] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh\n'}
+[28.082258] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv\n'}
+[28.082338] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv\n'}
+[28.082925] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller\n'}
+[28.083222] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller\n'}
+[28.084569] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake\n'}
+[28.084770] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake\n'}
+[28.084855] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[28.085005] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[28.085098] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake\n'}
+[28.085186] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake\n'}
+[28.085313] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml\n'}
+[28.087813] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[28.118441] (-) TimerEvent: {}
+[28.218756] (-) TimerEvent: {}
+[28.236185] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 0}
+[28.237056] (-) EventReactorShutdown: {}

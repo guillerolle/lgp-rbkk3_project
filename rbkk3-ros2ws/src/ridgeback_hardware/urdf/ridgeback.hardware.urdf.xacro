@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:arg name="sim_ignition" default="false"/>
+    <xacro:arg name="spawn_controller_manager" default="true"/>
+    <xacro:arg name="namespace" default=""/>
+    <xacro:arg name="controller_file" default="$(find ridgeback_hardware)/config/control.yaml"/>
+
+
+    <ros2_control name="ridgeback_hardware" type="system">
+        <hardware>
+            <xacro:if value="$(arg sim_ignition)">
+                <plugin>ign_ros2_control/IgnitionSystem</plugin>
+            </xacro:if>
+        </hardware>
+        <joint name="front_left_wheel">
+            <command_interface name="velocity">
+            <param name="min">-25</param>
+            <param name="max">25</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="rear_left_wheel">
+            <command_interface name="velocity">
+            <param name="min">-25</param>
+            <param name="max">25</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="front_right_wheel">
+            <command_interface name="velocity">
+            <param name="min">-25</param>
+            <param name="max">25</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="rear_right_wheel">
+            <command_interface name="velocity">
+            <param name="min">-25</param>
+            <param name="max">25</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="front_rocker">
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+    <xacro:if value="$(arg sim_ignition)">
+        <xacro:if value="$(arg spawn_controller_manager)">
+            <gazebo>
+                <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+                    <ros>
+                        <namespace>$(arg namespace)</namespace>
+                        <remapping>/robot_description:=robot_description</remapping>
+                    </ros>
+                    <parameters>$(arg controller_file)</parameters>
+                </plugin>
+            </gazebo>
+        </xacro:if>
+    </xacro:if>
+</robot>

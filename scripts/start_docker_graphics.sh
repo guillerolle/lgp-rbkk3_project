@@ -9,6 +9,7 @@ docker run --rm -it --net=host --privileged --env="DISPLAY" --env="QT_X11_NO_MIT
   --volume="$(pwd)/../docker-home:/home/duser:rw" \
   --volume="$(pwd)/../rbkk3-ros2ws:/home/duser/rbkk3-ros2ws:rw" \
   --volume="$(pwd)/../official-repos/ros2_kortex-ros2ws:/home/duser/ros2_kortex-ros2ws:rw" \
+  --volume="$(pwd)/../official-repos/clearpath_mecanum_drive_controller-ros2ws:/home/duser/clearpath_mecanum_drive_controller-ros2ws:rw" \
   --volume="$(pwd)/../venvs:/home/duser/venvs:rw" \
   --volume="/etc/localtime:/etc/localtime:ro" \
   --volume="rbkk3-docker-site:/opt/ros/humble/lib/python3.10/site-packages" \

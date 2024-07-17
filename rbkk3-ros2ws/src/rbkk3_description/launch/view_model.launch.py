@@ -1,36 +1,6 @@
 #!/usr/bin/env python3
 
-# Software License Agreement (BSD)
-#
-# @author    Roni Kreinin <rkreinin@clearpathrobotics.com>
-# @copyright (c) 2023, Clearpath Robotics, Inc., All rights reserved.
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions are met:
-# * Redistributions of source code must retain the above copyright notice,
-#   this list of conditions and the following disclaimer.
-# * Redistributions in binary form must reproduce the above copyright notice,
-#   this list of conditions and the following disclaimer in the documentation
-#   and/or other materials provided with the distribution.
-# * Neither the name of Clearpath Robotics nor the names of its contributors
-#   may be used to endorse or promote products derived from this software
-#   without specific prior written permission.
-#
-# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-# POSSIBILITY OF SUCH DAMAGE.
-
-# Redistribution and use in source and binary forms, with or without
-# modification, is not permitted without the express permission
-# of Clearpath Robotics.
+# @author    Guillermo Rolle (LGP) <grolle@fceia.unr.edu.ar>
 
 from launch import LaunchDescription
 from launch.actions import (
@@ -40,102 +10,83 @@ from launch.actions import (
     RegisterEventHandler,
 )
 from launch.event_handlers import OnProcessExit
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, FindExecutable
+from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution, FindExecutable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 from launch_ros.actions import Node, PushRosNamespace
 from launch_ros.substitutions import FindPackageShare
 
+from launch_ros.parameter_descriptions import ParameterValue
+
 
 def generate_launch_description():
     # Launch Arguments
-    arg_setup_path = DeclareLaunchArgument(
-        'setup_path',
-        default_value='/etc/clearpath/'
-    )
-
     arg_namespace = DeclareLaunchArgument(
-        'namespace',
-        default_value='',
+        'robot_namespace',
+        default_value='rbkk3',
         description='Robot namespace'
     )
 
-    arg_use_sim_time = DeclareLaunchArgument(
-        'use_sim_time',
-        default_value='false',
-        description='Use simulation (Gazebo) clock if true'
-    )
+    # arg_use_sim_time = DeclareLaunchArgument(
+    #     'use_sim_time',
+    #     default_value='false',
+    #     description='Use simulation (Gazebo) clock if true'
+    # )
 
-    arg_rviz_config = DeclareLaunchArgument(
-        name='config',
-        default_value='model.rviz',
-    )
+    # arg_rviz_config = DeclareLaunchArgument(
+    #     name='config',
+    #     default_value='ridgeback.rviz',
+    # )
 
     # Launch Configurations
-    rviz_config = LaunchConfiguration('config')
-    namespace = LaunchConfiguration('namespace')
-    use_sim_time = LaunchConfiguration('use_sim_time')
-    setup_path = LaunchConfiguration('setup_path')
+    # rviz_config = LaunchConfiguration('config')
+    namespace = LaunchConfiguration('robot_namespace')
+    # use_sim_time = LaunchConfiguration('use_sim_time')
 
     # Get Package Paths
-    pkg_clearpath_platform_description = FindPackageShare('clearpath_platform_description')
-    pkg_clearpath_viz = FindPackageShare('clearpath_viz')
+    pkg_rbkk3_description = FindPackageShare('rbkk3_description')
+    pkg_rbkk3_rviz = FindPackageShare('rbkk3_rviz')
 
-    config_rviz = PathJoinSubstitution(
-        [pkg_clearpath_viz, 'rviz', rviz_config]
-    )
+    # Namespace
+    #namespace = 'rbkk3'
 
-    group_view_model = GroupAction([
-        PushRosNamespace(namespace),
-        Node(package='rviz2',
-             executable='rviz2',
-             name='rviz2',
-             arguments=['-d', config_rviz],
-             parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}],
-             remappings=[
-               ('/tf', 'tf'),
-               ('/tf_static', 'tf_static')
-             ],
-             output='screen'),
+    # Launch Description
+    include_launch_robot_description = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(PathJoinSubstitution([
+            pkg_rbkk3_description,
+            'launch',
+            'robot_description.launch.py'])
+        ),
+        launch_arguments=[
+            ('robot_namespace', namespace),
+        ]
+    ) 
+
+    # Rviz && Joint State Publisher
+    group_view_model = GroupAction([PushRosNamespace(namespace),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(PathJoinSubstitution([
+                pkg_rbkk3_rviz,
+                'launch',
+                'rviz.launch.py'])
+            ),
+            launch_arguments=[
+                #('namespace', namespace),
+            ]
+        ),      
         Node(
             package='joint_state_publisher_gui',
             executable='joint_state_publisher_gui',
             remappings=[
-                ("joint_states", "platform/joint_states")
-            ]
-        ),
-
-        # Load Robot Description
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(PathJoinSubstitution([
-                pkg_clearpath_platform_description,
-                'launch',
-                'description.launch.py'])),
-            launch_arguments=[
-                ('robot_description_command', [ FindExecutable(name='xacro'),' ',
-                                                FindPackageShare('rbkk3_description'),'/urdf/rbkk3.urdf.xacro',
-                                                ]),
-            ]
-        ),
+                #("joint_states", "platform/joint_states")
+            ],
+            #namespace=namespace,
+        ),                
     ])
-
-    #
-    # event_generate_description = RegisterEventHandler(
-    #     event_handler=OnProcessExit(
-    #         target_action=node_generate_description,
-    #         on_exit=[group_view_model]
-    #     )
-    # )
 
     ld = LaunchDescription()
     # Args
-    ld.add_action(arg_setup_path)
-    ld.add_action(arg_namespace)
-    ld.add_action(arg_rviz_config)
-    ld.add_action(arg_use_sim_time)
+    ld.add_action(include_launch_robot_description)
     ld.add_action(group_view_model)
-    # Nodes
-    #ld.add_action(node_generate_description)
-    #ld.add_action(event_generate_description)
 
     return ld

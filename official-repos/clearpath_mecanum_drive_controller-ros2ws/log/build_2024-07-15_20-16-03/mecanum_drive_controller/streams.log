@@ -1,0 +1,48 @@
+[0.020s] Invoking command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller -- -j12 -l12
+[0.139s] [  6%] Built target mecanum_drive_controller_parameters
+[0.159s] [ 20%] Built target gmock_main
+[0.160s] [ 40%] Built target gmock
+[0.202s] [ 53%] Built target test_load_mecanum_drive_controller
+[0.204s] [ 60%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[11.940s] [ 66%] [32m[1mLinking CXX shared library libmecanum_drive_controller.so[0m
+[13.225s] [ 73%] Built target mecanum_drive_controller
+[13.262s] [ 80%] [32m[1mLinking CXX executable test_mecanum_drive_controller[0m
+[13.263s] [ 86%] [32m[1mLinking CXX executable test_mecanum_drive_controller_preceeding[0m
+[14.847s] [ 93%] Built target test_mecanum_drive_controller_preceeding
+[15.306s] [100%] Built target test_mecanum_drive_controller
+[15.322s] Invoked command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller -- -j12 -l12
+[15.393s] Invoking command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller
+[15.402s] -- Install configuration: ""
+[15.402s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters
+[15.402s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters/mecanum_drive_controller_parameters.hpp
+[15.402s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml
+[15.403s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller
+[15.403s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller
+[15.404s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp
+[15.404s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h
+[15.404s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp
+[15.404s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so
+[15.425s] -- Set runtime path of "/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""
+[15.425s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh
+[15.425s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv
+[15.425s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller
+[15.425s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller
+[15.425s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh
+[15.425s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv
+[15.425s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh
+[15.425s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv
+[15.426s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash
+[15.426s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh
+[15.426s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh
+[15.426s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv
+[15.426s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv
+[15.426s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller
+[15.426s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller
+[15.426s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake
+[15.426s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake
+[15.427s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[15.427s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.427s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake
+[15.427s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake
+[15.427s] -- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml
+[15.429s] Invoked command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller

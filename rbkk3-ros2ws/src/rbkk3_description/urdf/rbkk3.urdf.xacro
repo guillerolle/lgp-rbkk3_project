@@ -1,64 +1,63 @@
-<?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rbkk3-0001">
-  <xacro:arg name="name" default="rbkk3-0001"/>
-  <!-- Platform -->
-  <xacro:include filename="$(find rbkk3_description)/urdf/rbkk3_platform.urdf.xacro" />
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rbkk3">
+    <xacro:arg name="name" default="rbkk3"/>
 
+    <xacro:arg name="sim_ignition" default="false" />
+    <xacro:arg name="simulation_controllers" default="$(find rbkk3_description)/config/rbkk3_controllers.yaml" />
 
-  <!-- Arm -->
-  <xacro:arg name="arm_prefix" default="arm/"/>
-  <xacro:include filename="$(find rbkk3_description)/urdf/rbkk3_arm.urdf.xacro" ns="kk" />
+    <!-- Platform -->
+    <xacro:include filename="$(find ridgeback_description)/urdf/ridgeback.urdf.xacro" ns="rb"/>
 
-  <xacro:kk.load_robot
-    parent="base_link"
-    arm="$(arg arm)"
-    gripper="$(arg gripper)"
-    gripper_joint_name="$(arg gripper_joint_name)"
-    gripper_max_velocity="$(arg gripper_max_velocity)"
-    gripper_max_force="$(arg gripper_max_force)"
-    dof="$(arg dof)"
-    vision="$(arg vision)"
-    robot_ip="$(arg robot_ip)"
-    username="$(arg username)"
-    password="$(arg password)"
-    port="$(arg port)"
-    port_realtime="$(arg port_realtime)"
-    session_inactivity_timeout_ms="$(arg session_inactivity_timeout_ms)"
-    connection_inactivity_timeout_ms="$(arg connection_inactivity_timeout_ms)"
-    use_internal_bus_gripper_comm="$(arg use_internal_bus_gripper_comm)"
-    prefix="$(arg arm_prefix)"
-    use_fake_hardware="$(arg use_fake_hardware)"
-    fake_sensor_commands="$(arg fake_sensor_commands)"
-    sim_gazebo="$(arg sim_gazebo)"
-    sim_ignition="$(arg sim_ignition)"
-    sim_isaac="$(arg sim_isaac)"
-    initial_positions="${xacro.load_yaml(initial_positions_file)}" >
-    <origin xyz="0 0 0" rpy="0 0 0" />  <!-- position robot in the world -->
-  </xacro:kk.load_robot>
+    <!-- Arm -->
+    <xacro:arg name="arm_prefix" default="arm/"/>
+    <xacro:include filename="$(find rbkk3_description)/urdf/rbkk3_arm.urdf.xacro" ns="kk"/>
+    <xacro:kk.load_robot
+        parent="rbkk3_integration_link"
+        arm="$(arg arm)"
+        gripper="$(arg gripper)"
+        gripper_joint_name="$(arg gripper_joint_name)"
+        gripper_max_velocity="$(arg gripper_max_velocity)"
+        gripper_max_force="$(arg gripper_max_force)"
+        dof="$(arg dof)"
+        vision="$(arg vision)"
+        robot_ip="$(arg robot_ip)"
+        username="$(arg username)"
+        password="$(arg password)"
+        port="$(arg port)"
+        port_realtime="$(arg port_realtime)"
+        session_inactivity_timeout_ms="$(arg session_inactivity_timeout_ms)"
+        connection_inactivity_timeout_ms="$(arg connection_inactivity_timeout_ms)"
+        use_internal_bus_gripper_comm="$(arg use_internal_bus_gripper_comm)"
+        prefix="$(arg arm_prefix)"
+        use_fake_hardware="$(arg use_fake_hardware)"
+        fake_sensor_commands="$(arg fake_sensor_commands)"
+        sim_gazebo="$(arg sim_gazebo)"
+        sim_ignition="$(arg sim_ignition)"
+        sim_isaac="$(arg sim_isaac)"
+        initial_positions="${xacro.load_yaml(initial_positions_file)}" >
+        <origin xyz="0 0 0.005" rpy="0 0 0"/>  <!-- position robot in the parent -->
+    </xacro:kk.load_robot>
 
-  <!-- Integration Plate -->
-  <link name="rbkk3_integration_link"/>
-  <joint name="rbkk3_integration_platform_joint" type="fixed">
-    <origin xyz="0.45 0 0.32" rpy="0 0 0"/>
-    <parent link="base_link"/>
-    <child link="rbkk3_integration_link"/>
-  </joint>
-  <joint name="rbkk3_integration_arm_joint" type="fixed">
-    <origin xyz="0 0 0.005" rpy="0 0 0"/>
-    <parent link="rbkk3_integration_link"/>
-    <child link="$(arg arm_prefix)base_link"/>
-  </joint>
+    <!-- Integration Plate -->
+    <link name="rbkk3_integration_link"/>
+    <joint name="rbkk3_integration_platform_joint" type="fixed">
+        <origin xyz="0.45 0 0.295" rpy="0 0 0"/>
+        <parent link="chassis_link"/>
+        <child link="rbkk3_integration_link"/>
+    </joint>
 
-  <!-- Links -->
-
-
-  <!-- Mounts -->
-
-
-  <!-- Sensors -->
-
-
-  <!-- Extras -->
-
-
+    <!-- Controller Manager Spawner for Ignition -->
+    <xacro:if value="$(arg sim_ignition)">
+        <gazebo>
+            <plugin filename="libign_ros2_control-system.so" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+                <parameters>$(arg simulation_controllers)</parameters>
+                <ros>
+                    <namespace>$(arg namespace)</namespace>
+                </ros>
+            </plugin>
+            <!--plugin filename="libignition-gazebo-sensors-system.so" name="ignition::gazebo::systems::Sensors">
+                <render_engine>$(arg gazebo_renderer)</render_engine>
+            </plugin-->
+        </gazebo>
+    </xacro:if>
 </robot>

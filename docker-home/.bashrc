@@ -3,6 +3,7 @@ echo SOURCEANDO .BASHRC...
 source ~/venvs/$(hostname)/$(id --user --name)-python310.venv/bin/activate
 source /opt/ros/humble/setup.bash;
 source ~/ros2_kortex-ros2ws/install/local_setup.bash
+source ~/clearpath_mecanum_drive_controller-ros2ws/install/local_setup.bash
 cd ~/rbkk3-ros2ws;
 source install/local_setup.bash;
 export ROS_LOG_DIR=~/rbkk3-ros2ws/log

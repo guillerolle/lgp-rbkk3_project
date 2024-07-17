@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <!-- COMING FROM KINOVA kinova.urdf.xacro -->
+  <!-- COPIED FROM KINOVA ros2_kortex/kortex_description/kinova.urdf.xacro-->
+  <!--I don't include that file directly because it seems to hardcode the robot's base link fixation, so can't be included on top of the ridgeback-->
+
   <!-- Arguments -->
-  <xacro:arg name="prefix" default="arm/" />
+  <!--xacro:arg name="prefix" default="arm/" /-->
   <xacro:arg name="arm" default="gen3" />
   <xacro:arg name="dof" default="7" />
   <xacro:arg name="vision" default="false" />
@@ -28,7 +30,6 @@
   <xacro:arg name="camera_width" default="640"/>
   <xacro:arg name="camera_height" default="480"/>
   <xacro:arg name="camera_fps" default="6"/>
-  <xacro:arg name="simulation_controllers" default="$(find kortex_description)/arm/$(arg arm)/$(arg dof)dof/config/ros2_controllers.yaml" />
 
 
   <!-- import main macro -->
@@ -42,7 +43,6 @@
 
   <!-- create link fixed to the "world" -->
   <!--link name="world" /-->
-
 
   <!-- Links -->
 

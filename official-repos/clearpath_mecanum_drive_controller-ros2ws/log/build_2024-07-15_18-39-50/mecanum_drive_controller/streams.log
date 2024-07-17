@@ -1,0 +1,117 @@
+[0.015s] Invoking command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller
+[0.125s] -- The CXX compiler identification is GNU 11.4.0
+[0.141s] -- Detecting CXX compiler ABI info
+[0.233s] -- Detecting CXX compiler ABI info - done
+[0.242s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.242s] -- Detecting CXX compile features
+[0.243s] -- Detecting CXX compile features - done
+[0.247s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.404s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.513s] -- Found backward_ros: 1.0.2 (/opt/ros/humble/share/backward_ros/cmake)
+[0.524s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[0.531s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[0.531s] -- BACKWARD_HAS_UNWIND=1
+[0.532s] -- BACKWARD_HAS_BACKTRACE=0
+[0.532s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[0.532s] -- BACKWARD_HAS_DW=1
+[0.532s] -- BACKWARD_HAS_BFD=0
+[0.533s] -- Found Backward: /opt/ros/humble/share/backward_ros/cmake  
+[0.535s] -- Found controller_interface: 2.41.0 (/opt/ros/humble/share/controller_interface/cmake)
+[0.590s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.597s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.611s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.630s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.657s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.358s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.363s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.405s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.421s] -- Looking for C++ include pthread.h
+[1.591s] -- Looking for C++ include pthread.h - found
+[1.591s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.729s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.730s] -- Found Threads: TRUE  
+[1.994s] -- Found generate_parameter_library: 0.3.8 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[1.997s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.033s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.120s] -- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[2.167s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[2.188s] -- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)
+[2.199s] -- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.214s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.216s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.216s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.663s] -- Found ament_cmake_gmock: 1.3.8 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[2.667s] -- Found controller_manager: 2.41.0 (/opt/ros/humble/share/controller_manager/cmake)
+[2.931s] -- Found ros2_control_test_assets: 2.41.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)
+[2.934s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[3.026s] -- The C compiler identification is GNU 11.4.0
+[3.037s] -- Detecting C compiler ABI info
+[3.176s] -- Detecting C compiler ABI info - done
+[3.183s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.183s] -- Detecting C compile features
+[3.184s] -- Detecting C compile features - done
+[3.190s] -- Found ament_cmake_gtest: 1.3.8 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.192s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.212s] -- Configuring done
+[4.384s] -- Generating done
+[4.387s] -- Build files have been written to: /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller
+[4.403s] Invoked command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller
+[4.405s] Invoking command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller -- -j12 -l12
+[4.465s] [ 20%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller/mecanum_drive_controller_parameters/include//mecanum_drive_controller_parameters.hpp /home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.yaml `[0m
+[4.465s] [ 20%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[4.465s] [ 20%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[4.465s] [ 26%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[4.850s] [ 26%] Built target mecanum_drive_controller_parameters
+[4.876s] [ 40%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o[0m
+[4.877s] [ 40%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[5.794s] [ 46%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[5.849s] [ 46%] Built target gmock_main
+[7.474s] [ 53%] [32m[1mLinking CXX static library libgmock.a[0m
+[7.565s] [ 53%] Built target gmock
+[7.593s] [ 60%] [32mBuilding CXX object CMakeFiles/test_load_mecanum_drive_controller.dir/test/test_load_mecanum_drive_controller.cpp.o[0m
+[12.329s] [ 66%] [32m[1mLinking CXX executable test_load_mecanum_drive_controller[0m
+[12.852s] [ 66%] Built target test_load_mecanum_drive_controller
+[16.961s] [ 73%] [32m[1mLinking CXX shared library libmecanum_drive_controller.so[0m
+[18.159s] [ 73%] Built target mecanum_drive_controller
+[18.187s] [ 80%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller_preceeding.dir/test/test_mecanum_drive_controller_preceeding.cpp.o[0m
+[18.189s] [ 86%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller.dir/test/test_mecanum_drive_controller.cpp.o[0m
+[24.506s] [ 93%] [32m[1mLinking CXX executable test_mecanum_drive_controller_preceeding[0m
+[25.784s] [ 93%] Built target test_mecanum_drive_controller_preceeding
+[29.631s] [100%] [32m[1mLinking CXX executable test_mecanum_drive_controller[0m
+[31.320s] [100%] Built target test_mecanum_drive_controller
+[31.338s] Invoked command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller -- -j12 -l12
+[31.413s] Invoking command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller
+[31.422s] -- Install configuration: ""
+[31.423s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters
+[31.423s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters/mecanum_drive_controller_parameters.hpp
+[31.423s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml
+[31.423s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller
+[31.424s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller
+[31.424s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp
+[31.424s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h
+[31.424s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp
+[31.425s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so
+[31.445s] -- Set runtime path of "/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""
+[31.445s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh
+[31.445s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv
+[31.445s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller
+[31.446s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller
+[31.446s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh
+[31.446s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv
+[31.446s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh
+[31.446s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv
+[31.447s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash
+[31.447s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh
+[31.447s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh
+[31.447s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv
+[31.448s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv
+[31.448s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller
+[31.448s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller
+[31.448s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake
+[31.449s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake
+[31.449s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[31.449s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[31.449s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake
+[31.450s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake
+[31.450s] -- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml
+[31.463s] Invoked command in '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller

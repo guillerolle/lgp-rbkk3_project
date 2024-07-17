@@ -1,0 +1,102 @@
+[0.000000] (-) TimerEvent: {}
+[0.000457] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.000524] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.019740] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.021237] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'build'}
+[0.021393] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller', '--', '-j12', '-l12'], 'cwd': '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller', 'env': OrderedDict([('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('HOSTNAME', 'guillermo-ideapad3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/duser'), ('OLDPWD', '/home/duser'), ('ROS_PYTHON_VERSION', '3'), ('ROS_LOG_DIR', '/home/duser/rbkk3-ros2ws/log'), ('COLCON_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('AMENT_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/opt/ros/humble'), ('PWD', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.099602] (-) TimerEvent: {}
+[0.173528] (mecanum_drive_controller) StdoutLine: {'line': b'[  6%] Built target mecanum_drive_controller_parameters\n'}
+[0.182622] (mecanum_drive_controller) StdoutLine: {'line': b'[ 20%] Built target gmock_main\n'}
+[0.186188] (mecanum_drive_controller) StdoutLine: {'line': b'[ 40%] Built target gmock\n'}
+[0.191610] (mecanum_drive_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mecanum_drive_controller\x1b[0m\n'}
+[0.199785] (-) TimerEvent: {}
+[0.226464] (mecanum_drive_controller) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[0.229302] (mecanum_drive_controller) StdoutLine: {'line': b'[ 60%] Built target test_load_mecanum_drive_controller\n'}
+[0.299905] (-) TimerEvent: {}
+[0.400255] (-) TimerEvent: {}
+[0.500548] (-) TimerEvent: {}
+[0.600891] (-) TimerEvent: {}
+[0.701267] (-) TimerEvent: {}
+[0.801643] (-) TimerEvent: {}
+[0.901995] (-) TimerEvent: {}
+[1.002322] (-) TimerEvent: {}
+[1.102735] (-) TimerEvent: {}
+[1.203091] (-) TimerEvent: {}
+[1.303498] (-) TimerEvent: {}
+[1.403944] (-) TimerEvent: {}
+[1.504295] (-) TimerEvent: {}
+[1.604638] (-) TimerEvent: {}
+[1.704983] (-) TimerEvent: {}
+[1.805305] (-) TimerEvent: {}
+[1.905636] (-) TimerEvent: {}
+[2.005995] (-) TimerEvent: {}
+[2.106376] (-) TimerEvent: {}
+[2.206814] (-) TimerEvent: {}
+[2.307239] (-) TimerEvent: {}
+[2.407684] (-) TimerEvent: {}
+[2.508093] (-) TimerEvent: {}
+[2.608462] (-) TimerEvent: {}
+[2.708925] (-) TimerEvent: {}
+[2.809333] (-) TimerEvent: {}
+[2.909624] (-) TimerEvent: {}
+[3.009939] (-) TimerEvent: {}
+[3.110630] (-) TimerEvent: {}
+[3.211258] (-) TimerEvent: {}
+[3.226355] (mecanum_drive_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.226763] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.226851] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.226928] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.227007] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.227078] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.227156] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.227234] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.227311] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.227386] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.227460] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28\x1b[m\x1b[K,\n'}
+[3.227542] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/controller_interface/chainable_controller_interface.hpp:20\x1b[m\x1b[K,\n'}
+[3.227620] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller.hpp:26\x1b[m\x1b[K,\n'}
+[3.227699] (mecanum_drive_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:15\x1b[m\x1b[K:\n'}
+[3.227827] (mecanum_drive_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual controller_interface::InterfaceConfiguration mecanum_drive_controller::MecanumDriveController::command_interface_configuration() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.227912] (mecanum_drive_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/duser/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:269:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kdo\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.227992] (mecanum_drive_controller) StderrLine: {'line': b'  269 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_node()->get_logger(), mystr.c_str());\n'}
+[3.228070] (mecanum_drive_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.311423] (-) TimerEvent: {}
+[3.412356] (-) TimerEvent: {}
+[3.512761] (-) TimerEvent: {}
+[3.613111] (-) TimerEvent: {}
+[3.713446] (-) TimerEvent: {}
+[3.813776] (-) TimerEvent: {}
+[3.914114] (-) TimerEvent: {}
+[4.014479] (-) TimerEvent: {}
+[4.114826] (-) TimerEvent: {}
+[4.215125] (-) TimerEvent: {}
+[4.315463] (-) TimerEvent: {}
+[4.415819] (-) TimerEvent: {}
+[4.516173] (-) TimerEvent: {}
+[4.616502] (-) TimerEvent: {}
+[4.716832] (-) TimerEvent: {}
+[4.817251] (-) TimerEvent: {}
+[4.917675] (-) TimerEvent: {}
+[5.018104] (-) TimerEvent: {}
+[5.118531] (-) TimerEvent: {}
+[5.218933] (-) TimerEvent: {}
+[5.319298] (-) TimerEvent: {}
+[5.419672] (-) TimerEvent: {}
+[5.519986] (-) TimerEvent: {}
+[5.620321] (-) TimerEvent: {}
+[5.720683] (-) TimerEvent: {}
+[5.821063] (-) TimerEvent: {}
+[5.921458] (-) TimerEvent: {}
+[6.021883] (-) TimerEvent: {}
+[6.122272] (-) TimerEvent: {}
+[6.222629] (-) TimerEvent: {}
+[6.322947] (-) TimerEvent: {}
+[6.423334] (-) TimerEvent: {}
+[6.523782] (-) TimerEvent: {}
+[6.559984] (mecanum_drive_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mecanum_drive_controller.dir/build.make:76: CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o] Error 1\n'}
+[6.560468] (mecanum_drive_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:208: CMakeFiles/mecanum_drive_controller.dir/all] Error 2\n'}
+[6.560722] (mecanum_drive_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.564010] (mecanum_drive_controller) CommandEnded: {'returncode': 2}
+[6.623967] (-) TimerEvent: {}
+[6.641934] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 2}
+[6.652783] (-) EventReactorShutdown: {}

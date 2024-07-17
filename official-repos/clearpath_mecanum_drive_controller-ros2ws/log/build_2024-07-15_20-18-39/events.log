@@ -1,0 +1,219 @@
+[0.000000] (-) TimerEvent: {}
+[0.000388] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.000466] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.015726] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.017110] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'build'}
+[0.017732] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller', '--', '-j12', '-l12'], 'cwd': '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller', 'env': OrderedDict([('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('HOSTNAME', 'guillermo-ideapad3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/duser'), ('OLDPWD', '/home/duser'), ('ROS_PYTHON_VERSION', '3'), ('ROS_LOG_DIR', '/home/duser/rbkk3-ros2ws/log'), ('COLCON_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('AMENT_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/opt/ros/humble'), ('PWD', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.099588] (-) TimerEvent: {}
+[0.125116] (mecanum_drive_controller) StdoutLine: {'line': b'[  6%] Built target mecanum_drive_controller_parameters\n'}
+[0.132745] (mecanum_drive_controller) StdoutLine: {'line': b'[ 33%] Built target gmock_main\n'}
+[0.132955] (mecanum_drive_controller) StdoutLine: {'line': b'[ 40%] Built target gmock\n'}
+[0.142977] (mecanum_drive_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mecanum_drive_controller\x1b[0m\n'}
+[0.175885] (mecanum_drive_controller) StdoutLine: {'line': b'[ 53%] Built target test_load_mecanum_drive_controller\n'}
+[0.179938] (mecanum_drive_controller) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[0.199752] (-) TimerEvent: {}
+[0.300201] (-) TimerEvent: {}
+[0.400659] (-) TimerEvent: {}
+[0.501119] (-) TimerEvent: {}
+[0.601585] (-) TimerEvent: {}
+[0.702051] (-) TimerEvent: {}
+[0.802529] (-) TimerEvent: {}
+[0.902997] (-) TimerEvent: {}
+[1.003700] (-) TimerEvent: {}
+[1.104160] (-) TimerEvent: {}
+[1.204602] (-) TimerEvent: {}
+[1.304981] (-) TimerEvent: {}
+[1.405741] (-) TimerEvent: {}
+[1.506336] (-) TimerEvent: {}
+[1.607133] (-) TimerEvent: {}
+[1.707532] (-) TimerEvent: {}
+[1.807940] (-) TimerEvent: {}
+[1.908396] (-) TimerEvent: {}
+[2.008858] (-) TimerEvent: {}
+[2.109316] (-) TimerEvent: {}
+[2.209801] (-) TimerEvent: {}
+[2.310222] (-) TimerEvent: {}
+[2.410601] (-) TimerEvent: {}
+[2.510976] (-) TimerEvent: {}
+[2.611351] (-) TimerEvent: {}
+[2.711687] (-) TimerEvent: {}
+[2.812105] (-) TimerEvent: {}
+[2.912562] (-) TimerEvent: {}
+[3.012971] (-) TimerEvent: {}
+[3.113372] (-) TimerEvent: {}
+[3.213845] (-) TimerEvent: {}
+[3.314300] (-) TimerEvent: {}
+[3.414764] (-) TimerEvent: {}
+[3.515233] (-) TimerEvent: {}
+[3.615722] (-) TimerEvent: {}
+[3.716215] (-) TimerEvent: {}
+[3.816679] (-) TimerEvent: {}
+[3.917149] (-) TimerEvent: {}
+[4.017655] (-) TimerEvent: {}
+[4.118180] (-) TimerEvent: {}
+[4.218543] (-) TimerEvent: {}
+[4.318870] (-) TimerEvent: {}
+[4.419252] (-) TimerEvent: {}
+[4.519687] (-) TimerEvent: {}
+[4.620064] (-) TimerEvent: {}
+[4.720466] (-) TimerEvent: {}
+[4.820907] (-) TimerEvent: {}
+[4.921350] (-) TimerEvent: {}
+[5.021764] (-) TimerEvent: {}
+[5.122225] (-) TimerEvent: {}
+[5.223101] (-) TimerEvent: {}
+[5.323557] (-) TimerEvent: {}
+[5.423950] (-) TimerEvent: {}
+[5.524465] (-) TimerEvent: {}
+[5.624875] (-) TimerEvent: {}
+[5.725217] (-) TimerEvent: {}
+[5.825755] (-) TimerEvent: {}
+[5.926431] (-) TimerEvent: {}
+[6.026773] (-) TimerEvent: {}
+[6.127194] (-) TimerEvent: {}
+[6.227655] (-) TimerEvent: {}
+[6.328006] (-) TimerEvent: {}
+[6.428421] (-) TimerEvent: {}
+[6.528737] (-) TimerEvent: {}
+[6.629108] (-) TimerEvent: {}
+[6.730084] (-) TimerEvent: {}
+[6.831551] (-) TimerEvent: {}
+[6.932067] (-) TimerEvent: {}
+[7.032556] (-) TimerEvent: {}
+[7.132998] (-) TimerEvent: {}
+[7.233304] (-) TimerEvent: {}
+[7.333919] (-) TimerEvent: {}
+[7.434574] (-) TimerEvent: {}
+[7.535239] (-) TimerEvent: {}
+[7.635748] (-) TimerEvent: {}
+[7.736136] (-) TimerEvent: {}
+[7.836532] (-) TimerEvent: {}
+[7.936957] (-) TimerEvent: {}
+[8.037314] (-) TimerEvent: {}
+[8.137659] (-) TimerEvent: {}
+[8.238251] (-) TimerEvent: {}
+[8.338605] (-) TimerEvent: {}
+[8.438943] (-) TimerEvent: {}
+[8.539535] (-) TimerEvent: {}
+[8.639923] (-) TimerEvent: {}
+[8.740297] (-) TimerEvent: {}
+[8.840716] (-) TimerEvent: {}
+[8.941339] (-) TimerEvent: {}
+[9.042048] (-) TimerEvent: {}
+[9.142670] (-) TimerEvent: {}
+[9.243097] (-) TimerEvent: {}
+[9.343485] (-) TimerEvent: {}
+[9.443861] (-) TimerEvent: {}
+[9.544225] (-) TimerEvent: {}
+[9.644566] (-) TimerEvent: {}
+[9.744991] (-) TimerEvent: {}
+[9.845346] (-) TimerEvent: {}
+[9.945810] (-) TimerEvent: {}
+[10.046252] (-) TimerEvent: {}
+[10.146602] (-) TimerEvent: {}
+[10.247119] (-) TimerEvent: {}
+[10.347648] (-) TimerEvent: {}
+[10.448060] (-) TimerEvent: {}
+[10.548420] (-) TimerEvent: {}
+[10.648738] (-) TimerEvent: {}
+[10.749125] (-) TimerEvent: {}
+[10.849499] (-) TimerEvent: {}
+[10.950133] (-) TimerEvent: {}
+[11.050492] (-) TimerEvent: {}
+[11.151150] (-) TimerEvent: {}
+[11.251558] (-) TimerEvent: {}
+[11.351940] (-) TimerEvent: {}
+[11.452324] (-) TimerEvent: {}
+[11.552710] (-) TimerEvent: {}
+[11.653138] (-) TimerEvent: {}
+[11.753601] (-) TimerEvent: {}
+[11.854074] (-) TimerEvent: {}
+[11.954482] (-) TimerEvent: {}
+[12.055701] (-) TimerEvent: {}
+[12.156168] (-) TimerEvent: {}
+[12.256688] (-) TimerEvent: {}
+[12.357085] (-) TimerEvent: {}
+[12.457401] (-) TimerEvent: {}
+[12.501555] (mecanum_drive_controller) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libmecanum_drive_controller.so\x1b[0m\n'}
+[12.557514] (-) TimerEvent: {}
+[12.657840] (-) TimerEvent: {}
+[12.758240] (-) TimerEvent: {}
+[12.858827] (-) TimerEvent: {}
+[12.959414] (-) TimerEvent: {}
+[13.059890] (-) TimerEvent: {}
+[13.160327] (-) TimerEvent: {}
+[13.260861] (-) TimerEvent: {}
+[13.361298] (-) TimerEvent: {}
+[13.461751] (-) TimerEvent: {}
+[13.562235] (-) TimerEvent: {}
+[13.662592] (-) TimerEvent: {}
+[13.762946] (-) TimerEvent: {}
+[13.863435] (-) TimerEvent: {}
+[13.873316] (mecanum_drive_controller) StdoutLine: {'line': b'[ 73%] Built target mecanum_drive_controller\n'}
+[13.909231] (mecanum_drive_controller) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable test_mecanum_drive_controller\x1b[0m\n'}
+[13.910528] (mecanum_drive_controller) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable test_mecanum_drive_controller_preceeding\x1b[0m\n'}
+[13.963561] (-) TimerEvent: {}
+[14.063945] (-) TimerEvent: {}
+[14.164431] (-) TimerEvent: {}
+[14.264933] (-) TimerEvent: {}
+[14.365476] (-) TimerEvent: {}
+[14.466211] (-) TimerEvent: {}
+[14.566785] (-) TimerEvent: {}
+[14.667372] (-) TimerEvent: {}
+[14.767923] (-) TimerEvent: {}
+[14.868410] (-) TimerEvent: {}
+[14.968871] (-) TimerEvent: {}
+[15.069400] (-) TimerEvent: {}
+[15.169908] (-) TimerEvent: {}
+[15.270487] (-) TimerEvent: {}
+[15.371042] (-) TimerEvent: {}
+[15.471470] (-) TimerEvent: {}
+[15.571934] (-) TimerEvent: {}
+[15.589239] (mecanum_drive_controller) StdoutLine: {'line': b'[ 93%] Built target test_mecanum_drive_controller_preceeding\n'}
+[15.672094] (-) TimerEvent: {}
+[15.772551] (-) TimerEvent: {}
+[15.873025] (-) TimerEvent: {}
+[15.973425] (-) TimerEvent: {}
+[16.073955] (-) TimerEvent: {}
+[16.096677] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] Built target test_mecanum_drive_controller\n'}
+[16.114594] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[16.171445] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'install'}
+[16.174018] (-) TimerEvent: {}
+[16.184030] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller'], 'cwd': '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller', 'env': OrderedDict([('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('HOSTNAME', 'guillermo-ideapad3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/duser'), ('OLDPWD', '/home/duser'), ('ROS_PYTHON_VERSION', '3'), ('ROS_LOG_DIR', '/home/duser/rbkk3-ros2ws/log'), ('COLCON_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('AMENT_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/opt/ros/humble'), ('PWD', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/build/mecanum_drive_controller'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[16.193551] (mecanum_drive_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.193970] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters\n'}
+[16.194158] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller_parameters/mecanum_drive_controller_parameters.hpp\n'}
+[16.194395] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml\n'}
+[16.194830] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller\n'}
+[16.195044] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller\n'}
+[16.195206] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp\n'}
+[16.195356] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h\n'}
+[16.195515] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp\n'}
+[16.195697] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so\n'}
+[16.216329] (mecanum_drive_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""\n'}
+[16.216646] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh\n'}
+[16.216727] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv\n'}
+[16.216830] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller\n'}
+[16.216898] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller\n'}
+[16.216974] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh\n'}
+[16.217034] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv\n'}
+[16.217101] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh\n'}
+[16.217172] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv\n'}
+[16.217263] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash\n'}
+[16.217323] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh\n'}
+[16.217379] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh\n'}
+[16.217461] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv\n'}
+[16.217520] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv\n'}
+[16.217581] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller\n'}
+[16.217667] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller\n'}
+[16.217780] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake\n'}
+[16.217852] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake\n'}
+[16.217928] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.218058] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.218125] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake\n'}
+[16.218184] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake\n'}
+[16.218241] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/duser/clearpath_mecanum_drive_controller-ros2ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml\n'}
+[16.220517] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[16.274182] (-) TimerEvent: {}
+[16.315018] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 0}
+[16.316015] (-) EventReactorShutdown: {}
