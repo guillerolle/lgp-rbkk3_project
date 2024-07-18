@@ -108,6 +108,17 @@ def launch_setup(context, *args, **kwargs):
         ]
     ) 
 
+    # LIDAR BRIDGE
+    gz_topic_lidar = '/'.join(["/world", 
+            world.perform(context),
+            'model',
+            robot_name.perform(context),
+            'link',
+            'base_link',
+            'sensor',
+            'front_laser_sensor',
+            'scan'])
+
     group_action_spawn_robot = GroupAction([PushRosNamespace(namespace),
         # Joint State Broadcaster
         Node(package='controller_manager', executable='spawner',
@@ -139,6 +150,17 @@ def launch_setup(context, *args, **kwargs):
                 ('link_name', 'base_link'),
                 ('sensor_name', 'imu_sensor'),
                 ('ros_topic', 'platform/imu'),
+            ]
+        ),
+
+         # Lidar Bridge 
+        Node(
+            package='ros_gz_bridge',
+            executable='parameter_bridge',
+            arguments=[gz_topic_lidar + '@sensor_msgs/msg/LaserScan[ignition.msgs.LaserScan'],
+            output='screen',
+            remappings=[
+                (gz_topic_lidar, 'lidar/scan')
             ]
         ),
 

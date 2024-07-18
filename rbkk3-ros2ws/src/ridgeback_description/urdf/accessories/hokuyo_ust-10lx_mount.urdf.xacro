@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
 
-  <xacro:macro name="hokuyo_ust-10lx_mount" params="prefix topic location">
+  <xacro:macro name="hokuyo_ust-10lx_mount" params="prefix topic location sim_ignition:=false tf_prefix:=rbkk3/">
 
     <joint name="${prefix}_laser_joint" type="fixed">
       <origin xyz="${location * 0.3932} 0 0.2330" rpy="0 0 ${PI/2 - (location * PI/2)}" />
@@ -34,40 +34,38 @@
       </collision>
     </link>
 
-    <gazebo reference="${prefix}_laser">
-      <turnGravityOff>false</turnGravityOff>
-      <sensor type="ray" name="${prefix}_laser">
-        <pose>0 0 0 0 0 0</pose>
-        <visualize>false</visualize>
-        <update_rate>50</update_rate>
-        <ray>
-          <scan>
-            <horizontal>
-              <samples>720</samples>
-              <resolution>1</resolution>
-              <min_angle>-2.35619</min_angle>
-              <max_angle>2.35619</max_angle>
-            </horizontal>
-          </scan>
-          <range>
-            <min>0.20</min>
-            <max>10.0</max>
-            <resolution>0.01</resolution>
-          </range>
-          <noise>
-            <type>gaussian</type>
-            <mean>0.0</mean>
-            <stddev>0.001</stddev>
-          </noise>
-        </ray>
-        <plugin name="gazebo_ros_laser" filename="libgazebo_ros_laser.so">
-          <topicName>${topic}</topicName>
-          <frameName>${prefix}_laser</frameName>
-          <hokuyoMinIntensity>101</hokuyoMinIntensity>
-        </plugin>
-      </sensor>
-      <material>Gazebo/DarkGrey</material>
-    </gazebo>
+    <!-- Ignition reference -->
+    <xacro:if value="${sim_ignition}">
+      <gazebo reference="${prefix}_laser">
+        <sensor name="${prefix}_laser_sensor" type="gpu_lidar">
+          <update_rate>50</update_rate>
+          <visualize>true</visualize>
+          <always_on>true</always_on>
+          <ignition_frame_id>${tf_prefix}${prefix}_laser</ignition_frame_id>
+          <lidar>
+            <scan>
+              <horizontal>
+                <samples>720</samples>
+                <resolution>1</resolution>
+                <min_angle>-2.35619</min_angle>
+                <max_angle>2.35619</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <resolution>1</resolution>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.20</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+          </lidar>
+        </sensor>
+      </gazebo>
+    </xacro:if>
 
   </xacro:macro>
 

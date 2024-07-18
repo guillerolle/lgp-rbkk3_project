@@ -40,8 +40,8 @@ def generate_launch_description():
     # Directories
     # pkg_clearpath_gz = get_package_share_directory(
     #    'clearpath_gz')
-    pkg_ros_gz_sim = get_package_share_directory(
-        'ros_gz_sim')
+    pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
+    pkg_ridgeback_simulation = get_package_share_directory('ridgeback_simulation')
 
     # Determine all ros packages that are sourced
     packages_paths = [os.path.join(p, 'share') for p in os.getenv('AMENT_PREFIX_PATH').split(':')]
@@ -50,7 +50,7 @@ def generate_launch_description():
     gz_sim_resource_path = SetEnvironmentVariable(
         name='IGN_GAZEBO_RESOURCE_PATH',
         value=[
-            #os.path.join(pkg_clearpath_gz, 'worlds'),
+            os.path.join(pkg_ridgeback_simulation, 'worlds'),
             ':' + ':'.join(packages_paths)])
 
     # Paths
@@ -66,7 +66,7 @@ def generate_launch_description():
         launch_arguments=[
             ('gz_args', [LaunchConfiguration('world'),
                          '.sdf',
-                         ' -v 1',
+                         ' -v 4',
                          ' -r',
                         #  ' --gui-config ',
                         #  gui_config])

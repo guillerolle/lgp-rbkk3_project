@@ -64,6 +64,8 @@ def generate_launch_description():
             # config_control,
             ' ',
             'namespace:=', robot_namespace,
+            ' ',
+            'name:=', robot_namespace,
         ]
         ),
         value_type=str

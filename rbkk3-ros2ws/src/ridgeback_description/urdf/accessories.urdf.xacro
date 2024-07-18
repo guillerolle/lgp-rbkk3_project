@@ -9,17 +9,21 @@
     ridgeback_gazebo/launch/ridgeback_world.launch
     ridgeback_base/launch/base.launch
   -->
-  <!-- sick_lms1xx commented out for the moment -->
+
+  <!-- Only leaving Hokuyo LIDAR -->
   <!--xacro:include filename="$(find ridgeback_description)/urdf/accessories/sick_lms1xx_mount.urdf.xacro" /-->
   <!--xacro:include filename="$(find ridgeback_description)/urdf/accessories/sick_s300_mount.urdf.xacro" /-->
   <xacro:include filename="$(find ridgeback_description)/urdf/accessories/hokuyo_ust-10lx_mount.urdf.xacro" />
 
-  <!-- If enabled, generate the front HOKUYO UST-10LX LASER payload. -->
-  <xacro:if value="$(optenv RIDGEBACK_FRONT_HOKUYO_LASER 0)">
-    <xacro:hokuyo_ust-10lx_mount prefix="front"
-                                 topic="front/scan"
-                                 location="1" />
-  </xacro:if>
+  <!-- Force generate the front HOKUYO UST-10LX LASER payload. -->
+  <!--xacro:if value="$(optenv RIDGEBACK_FRONT_HOKUYO_LASER 0)"-->
+  <xacro:hokuyo_ust-10lx_mount  prefix="front"
+                                topic="front/scan"
+                                location="1" 
+                                sim_ignition="true"
+                                tf_prefix="$(arg name)/"
+                                 />
+  <!--/xacro:if-->
 
   <!-- If enabled, generate the rear HOKUYO UST-10LX LASER payload. -->
   <xacro:if value="$(optenv RIDGEBACK_REAR_HOKUYO_LASER 0)">
