@@ -6,8 +6,8 @@ bags.NOSYNC/
 frames*.pdf
 frames*.gv
 /*.urdf
-!setup_path/robot.yaml
 setup_path/*
+!setup_path/robot.yaml
 
 # Ignore generated docs
 *.dox
