@@ -83,6 +83,7 @@ def launch_setup(context, *args, **kwargs):
     pkg_rbkk3_simulation = get_package_share_directory('rbkk3_simulation')
     pkg_rbkk3_description = FindPackageShare('rbkk3_description')
     pkg_rbkk3_rviz = FindPackageShare('rbkk3_rviz')
+    pkg_ridgeback_simulation = get_package_share_directory('ridgeback_simulation')
 
     # Paths
     rviz_launch = PathJoinSubstitution(
@@ -123,6 +124,22 @@ def launch_setup(context, *args, **kwargs):
                 '-c', 'controller_manager',
                 '-p', PathJoinSubstitution([pkg_rbkk3_description, 'config', 'platform_velocity_controller.yaml'])
             ],
+        ),
+
+        # Ridgeback IMU Bridge
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(PathJoinSubstitution([
+                pkg_ridgeback_simulation,
+                'launch',
+                'imu_bridge.launch.py'])
+            ),
+            launch_arguments=[
+                ('robot_name', robot_name),
+                ('world_name', world),
+                ('link_name', 'base_link'),
+                ('sensor_name', 'imu_sensor'),
+                ('ros_topic', 'platform/imu'),
+            ]
         ),
 
         # Spawn robot
