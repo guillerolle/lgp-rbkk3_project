@@ -1,1 +1,0 @@
-Invoking command in '/home/duser/ros2_kortex-ros2ws/build/kortex_api': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/duser/ros2_kortex-ros2ws/src/ros2_kortex/kortex_api -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/duser/ros2_kortex-ros2ws/install/kortex_api

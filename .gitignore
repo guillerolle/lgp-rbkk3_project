@@ -1,3 +1,9 @@
 *.sync-conflict-*
 *~
 videos/*
+
+
+**/*-ros2ws/install
+**/*-ros2ws/build
+**/*-ros2ws/log
+**/*-ros2ws/bags

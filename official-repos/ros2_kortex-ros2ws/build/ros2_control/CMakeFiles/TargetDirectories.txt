@@ -1,9 +1,0 @@
-/home/duser/ros2_kortex-ros2ws/build/ros2_control/CMakeFiles/uninstall.dir
-/home/duser/ros2_kortex-ros2ws/build/ros2_control/CMakeFiles/ros2_control_uninstall.dir
-/home/duser/ros2_kortex-ros2ws/build/ros2_control/CMakeFiles/test.dir
-/home/duser/ros2_kortex-ros2ws/build/ros2_control/CMakeFiles/edit_cache.dir
-/home/duser/ros2_kortex-ros2ws/build/ros2_control/CMakeFiles/rebuild_cache.dir
-/home/duser/ros2_kortex-ros2ws/build/ros2_control/CMakeFiles/list_install_components.dir
-/home/duser/ros2_kortex-ros2ws/build/ros2_control/CMakeFiles/install.dir
-/home/duser/ros2_kortex-ros2ws/build/ros2_control/CMakeFiles/install/local.dir
-/home/duser/ros2_kortex-ros2ws/build/ros2_control/CMakeFiles/install/strip.dir
