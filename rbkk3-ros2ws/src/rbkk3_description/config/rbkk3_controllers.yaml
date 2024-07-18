@@ -61,16 +61,16 @@
     #         joint: robotiq_85_left_knuckle_joint
     #         allow_stalling: true
 
-    velocity_controller:
-        ros__parameters:
-            use_sim_time: true
-            command_joint_names: ["front_left_wheel", "rear_left_wheel", "rear_right_wheel", "front_right_wheel"]
-            state_joint_names: ["front_left_wheel", "rear_left_wheel", "rear_right_wheel", "front_right_wheel"]
-            interface_name: "velocity"
-            use_stamped_vel: false
-            base_frame_id: "base_link"
-            tf_frame: "rbkk3/"
-            tf_topic: "/tf"
-            kinematics: 
-                wheels_radius: 0.0759
-                sum_of_robot_center_projection_on_X_Y_axis: 0.5945
+    # velocity_controller:
+    #     ros__parameters:
+    #         use_sim_time: true
+    #         command_joint_names: ["front_left_wheel", "rear_left_wheel", "rear_right_wheel", "front_right_wheel"]
+    #         state_joint_names: ["front_left_wheel", "rear_left_wheel", "rear_right_wheel", "front_right_wheel"]
+    #         interface_name: "velocity"
+    #         use_stamped_vel: false
+    #         base_frame_id: "base_link"
+    #         tf_frame: "rbkk3/"
+    #         tf_topic: "/tf"
+    #         kinematics: 
+    #             wheels_radius: 0.0759
+    #             sum_of_robot_center_projection_on_X_Y_axis: 0.5945
