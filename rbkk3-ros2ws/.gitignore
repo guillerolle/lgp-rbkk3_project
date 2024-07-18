@@ -5,6 +5,7 @@ bags/
 bags.NOSYNC/
 frames*.pdf
 frames*.gv
+/*.urdf
 
 # Ignore generated docs
 *.dox
