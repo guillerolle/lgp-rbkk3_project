@@ -164,6 +164,19 @@ def launch_setup(context, *args, **kwargs):
             ]
         ),
 
+
+        # Robot Localization
+        Node(
+            package='robot_localization',
+            executable='ekf_node',
+            name='ekf_filter_node',
+            output='screen',
+            parameters=[PathJoinSubstitution([pkg_rbkk3_description, 'config', 'ekf.yaml']),
+                        {
+                            'use_sim_time': use_sim_time,
+                        }]
+        ),
+
         # Spawn robot
         Node(
             package='ros_gz_sim',

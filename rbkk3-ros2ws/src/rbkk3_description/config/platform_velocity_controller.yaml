@@ -9,6 +9,7 @@
             base_frame_id: "base_link"
             tf_frame: "rbkk3/"
             tf_topic: "/tf"
+            enable_odom_tf: false # robot_localization ekf will be in charge of publishing odom transform
             kinematics: 
                 wheels_radius: 0.0759
                 sum_of_robot_center_projection_on_X_Y_axis: 0.5945

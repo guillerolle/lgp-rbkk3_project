@@ -5,11 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /Status1
-        - /RobotModel1
-        - /TF1
-        - /Odometry1
-        - /LaserScan1
       Splitter Ratio: 0.5
     Tree Height: 722
   - Class: rviz_common/Selection
@@ -178,6 +173,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+          Value: true
         rear_cover_link:
           Alpha: 1
           Show Axes: false
@@ -325,18 +321,6 @@ Visualization Manager:
                 {}
               rbkk3/left_side_cover_link:
                 {}
-              rbkk3/rbkk3_integration_link:
-                rbkk3/arm/base_link:
-                  rbkk3/arm/shoulder_link:
-                    rbkk3/arm/half_arm_1_link:
-                      rbkk3/arm/half_arm_2_link:
-                        rbkk3/arm/forearm_link:
-                          rbkk3/arm/spherical_wrist_1_link:
-                            rbkk3/arm/spherical_wrist_2_link:
-                              rbkk3/arm/bracelet_link:
-                                rbkk3/arm/end_effector_link:
-                                  rbkk3/arm/tool_frame:
-                                    {}
               rbkk3/rear_cover_link:
                 {}
               rbkk3/rear_lights_link:
@@ -345,7 +329,18 @@ Visualization Manager:
                 {}
               rbkk3/riser_link:
                 rbkk3/mid_mount:
-                  {}
+                  rbkk3/rbkk3_integration_link:
+                    rbkk3/arm/base_link:
+                      rbkk3/arm/shoulder_link:
+                        rbkk3/arm/half_arm_1_link:
+                          rbkk3/arm/half_arm_2_link:
+                            rbkk3/arm/forearm_link:
+                              rbkk3/arm/spherical_wrist_1_link:
+                                rbkk3/arm/spherical_wrist_2_link:
+                                  rbkk3/arm/bracelet_link:
+                                    rbkk3/arm/end_effector_link:
+                                      rbkk3/arm/tool_frame:
+                                        {}
                 rbkk3/top_link:
                   {}
       Update Interval: 0
@@ -387,7 +382,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /rbkk3/velocity_controller/odom
+        Value: /rbkk3/odometry/filtered
       Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
@@ -419,7 +414,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /rbkk3/lidar/scan
+        Value: /rbkk3/ridgeback/sensors/lidar/scan
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -469,7 +464,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 5.445454120635986
+      Distance: 10.633272171020508
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -484,10 +479,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5253985524177551
+      Pitch: 1.1853984594345093
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.033579349517822
+      Yaw: 3.2485764026641846
     Saved: ~
 Window Geometry:
   Displays:

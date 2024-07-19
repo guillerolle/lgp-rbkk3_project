@@ -66,7 +66,7 @@ def generate_launch_description():
         launch_arguments=[
             ('gz_args', [LaunchConfiguration('world'),
                          '.sdf',
-                         ' -v 4',
+                         ' -v 1',
                          ' -r',
                         #  ' --gui-config ',
                         #  gui_config])
