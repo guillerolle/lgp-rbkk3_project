@@ -44,7 +44,7 @@
         <friction>
           <ode>
             <mu>1</mu>
-            <mu2>0</mu2>
+            <mu2>0.1</mu2>
             <fdir1 ignition:expressed_in="base_link">1 -1 0</fdir1>
           </ode>
         </friction>
@@ -59,7 +59,7 @@
         <friction>
           <ode>
             <mu>1</mu>
-            <mu2>0</mu2>
+            <mu2>0.1</mu2>
             <fdir1 ignition:expressed_in="base_link">1 1 0</fdir1>
           </ode>
         </friction>
@@ -74,7 +74,7 @@
         <friction>
           <ode>
             <mu>1</mu>
-            <mu2>0</mu2>
+            <mu2>0.1</mu2>
             <fdir1 ignition:expressed_in="base_link">1 1 0</fdir1>
           </ode>
         </friction>
@@ -89,7 +89,7 @@
         <friction>
           <ode>
             <mu>1</mu>
-            <mu2>0</mu2>
+            <mu2>0.1</mu2>
             <fdir1 ignition:expressed_in="base_link">1 -1 0</fdir1>
           </ode>
         </friction>
