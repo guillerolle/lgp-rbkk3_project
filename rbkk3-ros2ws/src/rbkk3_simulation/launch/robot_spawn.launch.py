@@ -149,7 +149,7 @@ def launch_setup(context, *args, **kwargs):
                 ('world_name', world),
                 ('link_name', 'base_link'),
                 ('sensor_name', 'imu_sensor'),
-                ('ros_topic', 'platform/imu'),
+                ('ros_topic', 'ridgeback/sensors/imu'),
             ]
         ),
 
@@ -160,7 +160,7 @@ def launch_setup(context, *args, **kwargs):
             arguments=[gz_topic_lidar + '@sensor_msgs/msg/LaserScan[ignition.msgs.LaserScan'],
             output='screen',
             remappings=[
-                (gz_topic_lidar, 'lidar/scan')
+                (gz_topic_lidar, 'ridgeback/sensors/lidar/scan')
             ]
         ),
 
