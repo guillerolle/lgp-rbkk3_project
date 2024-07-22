@@ -3,10 +3,7 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /Global Options1
-        - /RobotModel1
-        - /LaserScan1
+      Expanded: ~
       Splitter Ratio: 0.5
     Tree Height: 722
   - Class: rviz_common/Selection
@@ -26,7 +23,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: LaserScan
 Visualization Manager:
   Class: ""
   Displays:
@@ -229,8 +226,6 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        odom:
-          Value: true
         rbkk3/arm/base_link:
           Value: true
         rbkk3/arm/bracelet_link:
@@ -250,6 +245,8 @@ Visualization Manager:
         rbkk3/arm/spherical_wrist_2_link:
           Value: true
         rbkk3/arm/tool_frame:
+          Value: true
+        rbkk3/odom:
           Value: true
         rbkk3/platform/axle_link:
           Value: true
@@ -299,7 +296,7 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        odom:
+        rbkk3/odom:
           rbkk3/platform/base_link:
             rbkk3/platform/chassis_link:
               rbkk3/platform/axle_link:
@@ -423,7 +420,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: odom
+    Fixed Frame: rbkk3/odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -481,7 +478,7 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6253984570503235
+      Pitch: 0.6353984475135803
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
       Yaw: 5.598581790924072

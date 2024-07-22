@@ -134,6 +134,7 @@
             interface_name: "velocity"
             use_stamped_vel: false
             base_frame_id: "rbkk3/platform/base_link"
+            odom_frame_id: "rbkk3/odom"
             # tf_frame: "rbkk3/"
             tf_topic: "/tf"
             kinematics:
