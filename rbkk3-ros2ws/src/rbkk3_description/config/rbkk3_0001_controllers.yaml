@@ -1,4 +1,4 @@
-/rbkk3:
+/rbkk3_0001:
     controller_manager:
         ros__parameters:
             update_rate: 1000  # Hz
@@ -31,32 +31,32 @@
     arm_joint_state_broadcaster:
         ros__parameters:
             joints:
-                - rbkk3/arm/joint_1
-                - rbkk3/arm/joint_2
-                - rbkk3/arm/joint_3
-                - rbkk3/arm/joint_4
-                - rbkk3/arm/joint_5
-                - rbkk3/arm/joint_6
-                - rbkk3/arm/joint_7
+                - rbkk3_0001/arm/joint_1
+                - rbkk3_0001/arm/joint_2
+                - rbkk3_0001/arm/joint_3
+                - rbkk3_0001/arm/joint_4
+                - rbkk3_0001/arm/joint_5
+                - rbkk3_0001/arm/joint_6
+                - rbkk3_0001/arm/joint_7
 
     platform_joint_state_broadcaster:
         ros__parameters:
             joints:
-                - rbkk3/platform/front_left_wheel
-                - rbkk3/platform/front_right_wheel
-                - rbkk3/platform/rear_left_wheel
-                - rbkk3/platform/rear_right_wheel
+                - rbkk3_0001/platform/front_left_wheel
+                - rbkk3_0001/platform/front_right_wheel
+                - rbkk3_0001/platform/rear_left_wheel
+                - rbkk3_0001/platform/rear_right_wheel
 
     arm_joint_trajectory_controller:
         ros__parameters:
             joints:
-            - rbkk3/arm/joint_1
-            - rbkk3/arm/joint_2
-            - rbkk3/arm/joint_3
-            - rbkk3/arm/joint_4
-            - rbkk3/arm/joint_5
-            - rbkk3/arm/joint_6
-            - rbkk3/arm/joint_7
+            - rbkk3_0001/arm/joint_1
+            - rbkk3_0001/arm/joint_2
+            - rbkk3_0001/arm/joint_3
+            - rbkk3_0001/arm/joint_4
+            - rbkk3_0001/arm/joint_5
+            - rbkk3_0001/arm/joint_6
+            - rbkk3_0001/arm/joint_7
             command_interfaces:
             - effort
             state_interfaces:
@@ -69,31 +69,31 @@
                 stopped_velocity_tolerance: 0.0
                 goal_time: 0.0
             gains:
-                rbkk3/arm/joint_1:
+                rbkk3_0001/arm/joint_1:
                     p: 100.0
                     d: 10.0
                     i: 1.0
-                rbkk3/arm/joint_2:
+                rbkk3_0001/arm/joint_2:
                     p: 100.0
                     d: 10.0
                     i: 1.0
-                rbkk3/arm/joint_3:
+                rbkk3_0001/arm/joint_3:
                     p: 100.0
                     d: 10.0
                     i: 1.0
-                rbkk3/arm/joint_4:
+                rbkk3_0001/arm/joint_4:
                     p: 100.0
                     d: 10.0
                     i: 1.0
-                rbkk3/arm/joint_5:
+                rbkk3_0001/arm/joint_5:
                     p: 100.0
                     d: 10.0
                     i: 1.0
-                rbkk3/arm/joint_6:
+                rbkk3_0001/arm/joint_6:
                     p: 100.0
                     d: 10.0
                     i: 1.0
-                rbkk3/arm/joint_7:
+                rbkk3_0001/arm/joint_7:
                     p: 100.0
                     d: 10.0
                     i: 1.0
@@ -101,13 +101,13 @@
     arm_effort_joint_controller:
         ros__parameters:
             joints:
-            - rbkk3/arm/joint_1
-            - rbkk3/arm/joint_2
-            - rbkk3/arm/joint_3
-            - rbkk3/arm/joint_4
-            - rbkk3/arm/joint_5
-            - rbkk3/arm/joint_6
-            - rbkk3/arm/joint_7
+            - rbkk3_0001/arm/joint_1
+            - rbkk3_0001/arm/joint_2
+            - rbkk3_0001/arm/joint_3
+            - rbkk3_0001/arm/joint_4
+            - rbkk3_0001/arm/joint_5
+            - rbkk3_0001/arm/joint_6
+            - rbkk3_0001/arm/joint_7
 
     arm_twist_controller:
         ros__parameters:
@@ -129,13 +129,13 @@
     platform_velocity_controller:
         ros__parameters:
             use_sim_time: true
-            command_joint_names: ["rbkk3/platform/front_left_wheel", "rbkk3/platform/rear_left_wheel", "rbkk3/platform/rear_right_wheel", "rbkk3/platform/front_right_wheel"]
-            state_joint_names: ["rbkk3/platform/front_left_wheel", "rbkk3/platform/rear_left_wheel", "rbkk3/platform/rear_right_wheel", "rbkk3/platform/front_right_wheel"]
+            command_joint_names: ["rbkk3_0001/platform/front_left_wheel", "rbkk3_0001/platform/rear_left_wheel", "rbkk3_0001/platform/rear_right_wheel", "rbkk3_0001/platform/front_right_wheel"]
+            state_joint_names: ["rbkk3_0001/platform/front_left_wheel", "rbkk3_0001/platform/rear_left_wheel", "rbkk3_0001/platform/rear_right_wheel", "rbkk3_0001/platform/front_right_wheel"]
             interface_name: "velocity"
             use_stamped_vel: false
-            base_frame_id: "rbkk3/platform/base_link"
-            odom_frame_id: "rbkk3/odom"
-            # tf_frame: "rbkk3/"
+            base_frame_id: "rbkk3_0001/platform/base_link"
+            odom_frame_id: "rbkk3_0001/odom"
+            # tf_frame: "rbkk3_0001/"
             tf_topic: "/tf"
             kinematics:
                 wheels_radius: 0.0759
