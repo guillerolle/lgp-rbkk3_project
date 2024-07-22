@@ -5,6 +5,8 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /RobotModel1
+        - /LaserScan1
       Splitter Ratio: 0.5
     Tree Height: 722
   - Class: rviz_common/Selection
@@ -24,7 +26,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -64,152 +66,152 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        arm/base_link:
+        rbkk3/arm/base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm/bracelet_link:
+        rbkk3/arm/bracelet_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm/end_effector_link:
+        rbkk3/arm/end_effector_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        arm/forearm_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm/half_arm_1_link:
+        rbkk3/arm/forearm_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm/half_arm_2_link:
+        rbkk3/arm/half_arm_1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm/shoulder_link:
+        rbkk3/arm/half_arm_2_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm/spherical_wrist_1_link:
+        rbkk3/arm/shoulder_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm/spherical_wrist_2_link:
+        rbkk3/arm/spherical_wrist_1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm/tool_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        axle_link:
+        rbkk3/arm/spherical_wrist_2_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        base_link:
+        rbkk3/arm/tool_frame:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        chassis_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_cover_link:
+        rbkk3/platform/axle_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_laser:
+        rbkk3/platform/base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rbkk3/platform/chassis_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_left_wheel_link:
+        rbkk3/platform/front_cover_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_lights_link:
+        rbkk3/platform/front_laser:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_right_wheel_link:
+        rbkk3/platform/front_left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_rocker_link:
+        rbkk3/platform/front_lights_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        imu_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_side_cover_link:
+        rbkk3/platform/front_right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        mid_mount:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rbkk3_integration_link:
+        rbkk3/platform/front_rocker_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rear_cover_link:
+        rbkk3/platform/imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rbkk3/platform/left_side_cover_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rear_left_wheel_link:
+        rbkk3/platform/mid_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rbkk3/platform/rear_cover_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rear_lights_link:
+        rbkk3/platform/rear_left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rear_right_wheel_link:
+        rbkk3/platform/rear_lights_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rear_rocker_link:
+        rbkk3/platform/rear_right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        right_side_cover_link:
+        rbkk3/platform/rear_rocker_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        riser_link:
+        rbkk3/platform/right_side_cover_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        top_link:
+        rbkk3/platform/riser_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rbkk3/platform/top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rbkk3/rbkk3_integration_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -218,7 +220,7 @@ Visualization Manager:
         Inertia: false
         Mass: false
       Name: RobotModel
-      TF Prefix: rbkk3
+      TF Prefix: ""
       Update Interval: 0
       Value: true
       Visual Enabled: true
@@ -227,6 +229,8 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        odom:
+          Value: true
         rbkk3/arm/base_link:
           Value: true
         rbkk3/arm/bracelet_link:
@@ -247,49 +251,47 @@ Visualization Manager:
           Value: true
         rbkk3/arm/tool_frame:
           Value: true
-        rbkk3/axle_link:
+        rbkk3/platform/axle_link:
           Value: true
-        rbkk3/base_link:
+        rbkk3/platform/base_link:
           Value: true
-        rbkk3/chassis_link:
+        rbkk3/platform/chassis_link:
           Value: true
-        rbkk3/front_cover_link:
+        rbkk3/platform/front_cover_link:
           Value: true
-        rbkk3/front_laser:
+        rbkk3/platform/front_laser:
           Value: true
-        rbkk3/front_left_wheel_link:
+        rbkk3/platform/front_left_wheel_link:
           Value: true
-        rbkk3/front_lights_link:
+        rbkk3/platform/front_lights_link:
           Value: true
-        rbkk3/front_right_wheel_link:
+        rbkk3/platform/front_right_wheel_link:
           Value: true
-        rbkk3/front_rocker_link:
+        rbkk3/platform/front_rocker_link:
           Value: true
-        rbkk3/imu_link:
+        rbkk3/platform/imu_link:
           Value: true
-        rbkk3/left_side_cover_link:
+        rbkk3/platform/left_side_cover_link:
           Value: true
-        rbkk3/mid_mount:
+        rbkk3/platform/mid_mount:
           Value: true
-        rbkk3/odom:
+        rbkk3/platform/rear_cover_link:
+          Value: true
+        rbkk3/platform/rear_left_wheel_link:
+          Value: true
+        rbkk3/platform/rear_lights_link:
+          Value: true
+        rbkk3/platform/rear_right_wheel_link:
+          Value: true
+        rbkk3/platform/rear_rocker_link:
+          Value: true
+        rbkk3/platform/right_side_cover_link:
+          Value: true
+        rbkk3/platform/riser_link:
+          Value: true
+        rbkk3/platform/top_link:
           Value: true
         rbkk3/rbkk3_integration_link:
-          Value: true
-        rbkk3/rear_cover_link:
-          Value: true
-        rbkk3/rear_left_wheel_link:
-          Value: true
-        rbkk3/rear_lights_link:
-          Value: true
-        rbkk3/rear_right_wheel_link:
-          Value: true
-        rbkk3/rear_rocker_link:
-          Value: true
-        rbkk3/right_side_cover_link:
-          Value: true
-        rbkk3/riser_link:
-          Value: true
-        rbkk3/top_link:
           Value: true
       Marker Scale: 0.5
       Name: TF
@@ -297,38 +299,38 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        rbkk3/odom:
-          rbkk3/base_link:
-            rbkk3/chassis_link:
-              rbkk3/axle_link:
-                rbkk3/front_rocker_link:
-                  rbkk3/front_left_wheel_link:
+        odom:
+          rbkk3/platform/base_link:
+            rbkk3/platform/chassis_link:
+              rbkk3/platform/axle_link:
+                rbkk3/platform/front_rocker_link:
+                  rbkk3/platform/front_left_wheel_link:
                     {}
-                  rbkk3/front_right_wheel_link:
+                  rbkk3/platform/front_right_wheel_link:
                     {}
-                rbkk3/rear_rocker_link:
-                  rbkk3/rear_left_wheel_link:
+                rbkk3/platform/rear_rocker_link:
+                  rbkk3/platform/rear_left_wheel_link:
                     {}
-                  rbkk3/rear_right_wheel_link:
+                  rbkk3/platform/rear_right_wheel_link:
                     {}
-              rbkk3/front_cover_link:
+              rbkk3/platform/front_cover_link:
                 {}
-              rbkk3/front_laser:
+              rbkk3/platform/front_laser:
                 {}
-              rbkk3/front_lights_link:
+              rbkk3/platform/front_lights_link:
                 {}
-              rbkk3/imu_link:
+              rbkk3/platform/imu_link:
                 {}
-              rbkk3/left_side_cover_link:
+              rbkk3/platform/left_side_cover_link:
                 {}
-              rbkk3/rear_cover_link:
+              rbkk3/platform/rear_cover_link:
                 {}
-              rbkk3/rear_lights_link:
+              rbkk3/platform/rear_lights_link:
                 {}
-              rbkk3/right_side_cover_link:
+              rbkk3/platform/right_side_cover_link:
                 {}
-              rbkk3/riser_link:
-                rbkk3/mid_mount:
+              rbkk3/platform/riser_link:
+                rbkk3/platform/mid_mount:
                   rbkk3/rbkk3_integration_link:
                     rbkk3/arm/base_link:
                       rbkk3/arm/shoulder_link:
@@ -341,7 +343,7 @@ Visualization Manager:
                                     rbkk3/arm/end_effector_link:
                                       rbkk3/arm/tool_frame:
                                         {}
-                rbkk3/top_link:
+                rbkk3/platform/top_link:
                   {}
       Update Interval: 0
       Value: true
@@ -421,7 +423,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: rbkk3/odom
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -464,25 +466,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 10.633272171020508
+      Distance: 9.026557922363281
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.3488245904445648
-        Y: -0.08217324316501617
-        Z: 0.45536017417907715
+        X: 0.21023809909820557
+        Y: 0.04955790936946869
+        Z: 0.3476177453994751
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.1853984594345093
+      Pitch: 0.6253984570503235
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.2485764026641846
+      Yaw: 5.598581790924072
     Saved: ~
 Window Geometry:
   Displays:

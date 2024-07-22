@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<robot name="ridgeback" xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:arg name="robot_name" default="ridgeback"/>
+    <xacro:arg name="use_prefix" default="false"/>
+
+    <xacro:include filename="$(find ridgeback_description)/urdf/ridgeback_model.xacro" ns="rb"/>
+    <xacro:if value="$(arg use_prefix)">
+        <xacro:rb.load_platform prefix="$(arg robot_name)/" sim_ignition="true"/>
+        <xacro:property name="controller_file" value="$(find ridgeback_hardware)/config/control_prefixed.yaml"/>
+    </xacro:if>
+    <xacro:unless value="$(arg use_prefix)">
+        <xacro:rb.load_platform sim_ignition="true"/>
+        <xacro:property name="controller_file" value="$(find ridgeback_hardware)/config/control.yaml"/>
+    </xacro:unless>
+
+    <xacro:include filename="$(find ridgeback_hardware)/urdf/ridgeback_ign_controller_manager.xacro" ns="rb_cm" />
+    <xacro:rb_cm.load_gazebo_controller_manager
+                sim_ignition="true"
+                override_namespace="false"
+                controller_file="${controller_file}"
+                />
+</robot>

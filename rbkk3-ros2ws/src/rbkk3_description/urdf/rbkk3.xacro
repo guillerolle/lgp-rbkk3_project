@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rbkk3">
     <xacro:arg name="name" default="rbkk3"/>
+    <xacro:arg name="use_prefix" default="true"/>
+    <!--xacro:arg name="namespace" default="/"/-->
+
+    <xacro:if value="$(arg use_prefix)">
+        <xacro:property name="prefix" value="$(arg name)/"/>
+        <xacro:property name="cm_namespace" value="$(arg name)"/>
+    </xacro:if>
+    <xacro:unless value="$(arg use_prefix)">
+        <xacro:property name="prefix" value=""/>
+        <xacro:property name="cm_namespace" value="/"/>
+    </xacro:unless>
 
     <xacro:arg name="sim_ignition" default="false" />
-    <xacro:arg name="simulation_controllers" default="$(find rbkk3_description)/config/rbkk3_controllers.yaml" />
+    <xacro:arg name="simulation_controllers" default="$(find rbkk3_description)/config/$(arg name)_controllers.yaml" />
 
     <!-- Platform -->
-    <xacro:include filename="$(find ridgeback_description)/urdf/ridgeback.urdf.xacro" ns="rb"/>
+    <xacro:arg name="platform_prefix" default="platform/"/>
+    <xacro:include filename="$(find ridgeback_description)/urdf/ridgeback_model.xacro" ns="rb"/>
+    <xacro:rb.load_platform prefix="${prefix}$(arg platform_prefix)" sim_ignition="$(arg sim_ignition)"/>
 
     <!-- Arm -->
     <xacro:arg name="arm_prefix" default="arm/"/>
-    <xacro:include filename="$(find rbkk3_description)/urdf/rbkk3_arm.urdf.xacro" ns="kk"/>
+    <xacro:include filename="$(find rbkk3_description)/urdf/rbkk3_arm.xacro" ns="kk"/>
     <xacro:kk.load_robot
-        parent="rbkk3_integration_link"
+        parent="${prefix}rbkk3_integration_link"
         arm="$(arg arm)"
         gripper="$(arg gripper)"
         gripper_joint_name="$(arg gripper_joint_name)"
@@ -28,7 +41,7 @@
         session_inactivity_timeout_ms="$(arg session_inactivity_timeout_ms)"
         connection_inactivity_timeout_ms="$(arg connection_inactivity_timeout_ms)"
         use_internal_bus_gripper_comm="$(arg use_internal_bus_gripper_comm)"
-        prefix="$(arg arm_prefix)"
+        prefix="${prefix}$(arg arm_prefix)"
         use_fake_hardware="$(arg use_fake_hardware)"
         fake_sensor_commands="$(arg fake_sensor_commands)"
         sim_gazebo="$(arg sim_gazebo)"
@@ -39,7 +52,7 @@
     </xacro:kk.load_robot>
 
     <!-- Integration Plate -->
-    <link name="rbkk3_integration_link">
+    <link name="${prefix}rbkk3_integration_link">
         <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
@@ -48,10 +61,10 @@
         <material name="dark_grey" />
       </visual>
     </link>
-    <joint name="rbkk3_integration_platform_joint" type="fixed">
+    <joint name="${prefix}rbkk3_integration_platform_joint" type="fixed">
         <origin xyz="0.25 0 0.0" rpy="0 0 0"/>
-        <parent link="mid_mount"/>
-        <child link="rbkk3_integration_link"/>
+        <parent link="${prefix}$(arg platform_prefix)mid_mount"/>
+        <child link="${prefix}rbkk3_integration_link"/>
     </joint>
 
     <!-- Controller Manager Spawner for Ignition -->
@@ -60,7 +73,7 @@
             <plugin filename="libign_ros2_control-system.so" name="ign_ros2_control::IgnitionROS2ControlPlugin">
                 <parameters>$(arg simulation_controllers)</parameters>
                 <ros>
-                    <namespace>$(arg namespace)</namespace>
+                    <namespace>${cm_namespace}</namespace>
                 </ros>
             </plugin>
             <!--plugin filename="libignition-gazebo-sensors-system.so" name="ignition::gazebo::systems::Sensors">

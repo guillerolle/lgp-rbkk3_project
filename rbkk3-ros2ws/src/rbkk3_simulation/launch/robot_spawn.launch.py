@@ -75,8 +75,8 @@ def launch_setup(context, *args, **kwargs):
     x, y, z = LaunchConfiguration('x'), LaunchConfiguration('y'), LaunchConfiguration('z')
     yaw = LaunchConfiguration('yaw')
 
-    namespace = LaunchConfiguration('robot_name')
     robot_name = LaunchConfiguration('robot_name')
+    namespace = robot_name
 
     # Directories
     # pkg_clearpath_viz = FindPackageShare('clearpath_viz')
@@ -102,9 +102,10 @@ def launch_setup(context, *args, **kwargs):
             'robot_description.launch.py'])
         ),
         launch_arguments=[
-            ('robot_namespace', namespace),
+            ('robot_name', robot_name),
             ('sim_ignition', 'true'),
-            ('urdf_spawn_controller_manager', 'false'),
+            #('urdf_spawn_controller_manager', 'false'),
+            ('rsp_ns', namespace),
         ]
     ) 
 
@@ -114,16 +115,35 @@ def launch_setup(context, *args, **kwargs):
             'model',
             robot_name.perform(context),
             'link',
-            'base_link',
+            robot_name.perform(context=context) + '/platform/base_link',
             'sensor',
-            'front_laser_sensor',
+            robot_name.perform(context=context) + '/platform/front_laser_sensor',
             'scan'])
 
     group_action_spawn_robot = GroupAction([PushRosNamespace(namespace),
-        # Joint State Broadcaster
+        # Spawn robot
+        Node(
+            package='ros_gz_sim',
+            executable='create',
+            arguments=['-name', robot_name,
+                       '-x', x,
+                       '-y', y,
+                       '-z', z,
+                       '-Y', yaw,
+                       '-topic', 'robot_description'],
+            output='screen'
+        ),
+        
+        # Joint State Broadcasters
         Node(package='controller_manager', executable='spawner',
             arguments=[
                 'arm_joint_state_broadcaster',
+                '-c', 'controller_manager',
+            ],
+        ),
+        Node(package='controller_manager', executable='spawner',
+            arguments=[
+                'platform_joint_state_broadcaster',
                 '-c', 'controller_manager',
             ],
         ),
@@ -131,9 +151,18 @@ def launch_setup(context, *args, **kwargs):
         # Ridgeback Velocity Controller
         Node(package='controller_manager', executable='spawner',
             arguments=[
-                'velocity_controller',
+                'platform_velocity_controller',
                 '-c', 'controller_manager',
-                '-p', PathJoinSubstitution([pkg_rbkk3_description, 'config', 'platform_velocity_controller.yaml'])
+                #'-p', PathJoinSubstitution([pkg_rbkk3_description, 'config', 'platform_velocity_controller.yaml'])
+            ],
+        ),
+
+        # Arm trajectory controller
+        Node(package='controller_manager', executable='spawner',
+            arguments=[
+                'arm_joint_trajectory_controller',
+                '-c', 'controller_manager',
+                #'-p', PathJoinSubstitution([pkg_rbkk3_description, 'config', 'platform_velocity_controller.yaml'])
             ],
         ),
 
@@ -147,7 +176,7 @@ def launch_setup(context, *args, **kwargs):
             launch_arguments=[
                 ('robot_name', robot_name),
                 ('world_name', world),
-                ('link_name', 'base_link'),
+                ('link_name', robot_name.perform(context=context) + '/platform/base_link'),
                 ('sensor_name', 'imu_sensor'),
                 ('ros_topic', 'ridgeback/sensors/imu'),
             ]
@@ -157,11 +186,15 @@ def launch_setup(context, *args, **kwargs):
         Node(
             package='ros_gz_bridge',
             executable='parameter_bridge',
+            name='lidar_bridge',
             arguments=[gz_topic_lidar + '@sensor_msgs/msg/LaserScan[ignition.msgs.LaserScan'],
             output='screen',
             remappings=[
                 (gz_topic_lidar, 'ridgeback/sensors/lidar/scan')
-            ]
+            ],
+            parameters=[{
+                'use_sim_time': use_sim_time,
+            }]
         ),
 
 
@@ -175,19 +208,6 @@ def launch_setup(context, *args, **kwargs):
                         {
                             'use_sim_time': use_sim_time,
                         }]
-        ),
-
-        # Spawn robot
-        Node(
-            package='ros_gz_sim',
-            executable='create',
-            arguments=['-name', robot_name,
-                       '-x', x,
-                       '-y', y,
-                       '-z', z,
-                       '-Y', yaw,
-                       '-topic', 'robot_description'],
-            output='screen'
         ),
 
         # RViz

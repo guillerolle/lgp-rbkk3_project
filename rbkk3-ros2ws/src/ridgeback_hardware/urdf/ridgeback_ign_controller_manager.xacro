@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+    <!-- filename=ridgeback_ign_controller_manager.xacro -->
+    <xacro:macro name="load_gazebo_controller_manager" params="
+                 sim_ignition:=false
+                 controller_file:='$(find ridgeback_hardware)/config/control.yaml'
+                 override_namespace:=false
+                 namespace:=''
+                    ">
+        <gazebo>
+            <xacro:if value="${sim_ignition}">
+                <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+                    <ros>
+                        <xacro:if value="${override_namespace}">
+                            <namespace>${namespace}</namespace>
+                            <remapping>/robot_description:=robot_description</remapping>
+                        </xacro:if>
+                    </ros>
+                    <parameters>${controller_file}</parameters>
+                </plugin>
+            </xacro:if>
+        </gazebo>
+    </xacro:macro>
+    <!-- endfile=ridgeback_ign_controller_manager -->
+</robot>

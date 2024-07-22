@@ -1,0 +1,17 @@
+/**:
+  controller_manager:
+    ros__parameters:
+      update_rate: 100
+      use_sim_time: True
+      ridgeback_joint_state_broadcaster.type: 'joint_state_broadcaster/JointStateBroadcaster'
+      ridgeback_velocity_controller.type: 'mecanum_drive_controller/MecanumDriveController'
+
+  ridgeback_velocity_controller:
+    ros__parameters:
+      command_joint_names: ["ridgeback/front_left_wheel", "ridgeback/rear_left_wheel", "ridgeback/rear_right_wheel", "ridgeback/front_right_wheel"]
+      state_joint_names: ["ridgeback/front_left_wheel", "ridgeback/rear_left_wheel", "ridgeback/rear_right_wheel", "ridgeback/front_right_wheel"]
+      interface_name: "velocity"
+      use_stamped_vel: false
+      kinematics: 
+        wheels_radius: 0.0759
+        sum_of_robot_center_projection_on_X_Y_axis: 0.5945
