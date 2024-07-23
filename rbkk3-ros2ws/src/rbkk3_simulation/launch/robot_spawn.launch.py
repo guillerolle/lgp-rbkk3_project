@@ -137,13 +137,13 @@ def launch_setup(context, *args, **kwargs):
         # Joint State Broadcasters
         Node(package='controller_manager', executable='spawner',
             arguments=[
-                'arm_joint_state_broadcaster',
+                robot_name.perform(context) + '_arm_joint_state_broadcaster',
                 '-c', 'controller_manager',
             ],
         ),
         Node(package='controller_manager', executable='spawner',
             arguments=[
-                'platform_joint_state_broadcaster',
+                robot_name.perform(context) + '_platform_joint_state_broadcaster',
                 '-c', 'controller_manager',
             ],
         ),
@@ -151,7 +151,7 @@ def launch_setup(context, *args, **kwargs):
         # Ridgeback Velocity Controller
         Node(package='controller_manager', executable='spawner',
             arguments=[
-                'platform_velocity_controller',
+                robot_name.perform(context) + '_platform_velocity_controller',
                 '-c', 'controller_manager',
                 #'-p', PathJoinSubstitution([pkg_rbkk3_description, 'config', 'platform_velocity_controller.yaml'])
             ],
@@ -160,7 +160,7 @@ def launch_setup(context, *args, **kwargs):
         # Arm trajectory controller
         Node(package='controller_manager', executable='spawner',
             arguments=[
-                'arm_joint_trajectory_controller',
+                robot_name.perform(context) + '_arm_joint_trajectory_controller',
                 '-c', 'controller_manager',
                 #'-p', PathJoinSubstitution([pkg_rbkk3_description, 'config', 'platform_velocity_controller.yaml'])
             ],

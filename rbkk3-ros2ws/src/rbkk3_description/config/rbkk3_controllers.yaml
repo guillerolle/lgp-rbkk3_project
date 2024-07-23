@@ -5,30 +5,30 @@
             use_sim_time: True
 
             # ARM BROADCASTER
-            arm_joint_state_broadcaster:
+            rbkk3_arm_joint_state_broadcaster:
                 type: joint_state_broadcaster/JointStateBroadcaster
 
             # ARM CONTROLLERS
-            arm_joint_trajectory_controller:
+            rbkk3_arm_joint_trajectory_controller:
                 type: joint_trajectory_controller/JointTrajectoryController
-            arm_twist_controller:
+            rbkk3_arm_twist_controller:
                 type: picknik_twist_controller/PicknikTwistController
             #robotiq_gripper_controller:
             #    type: position_controllers/GripperActionController
-            arm_fault_controller:
+            rbkk3_arm_fault_controller:
                 type: picknik_reset_fault_controller/PicknikResetFaultController
-            arm_effort_joint_controller:
+            rbkk3_arm_effort_joint_controller:
                 type: effort_controllers/JointGroupEffortController
             
             #arm_group_controller:
             #    type: joint_trajectory_controller/JointTrajectoryController
 
             # PLATFORM CONTROLLERS
-            platform_joint_state_broadcaster.type: 'joint_state_broadcaster/JointStateBroadcaster'
-            platform_velocity_controller:
+            rbkk3_platform_joint_state_broadcaster.type: 'joint_state_broadcaster/JointStateBroadcaster'
+            rbkk3_platform_velocity_controller:
                 type: 'mecanum_drive_controller/MecanumDriveController'
 
-    arm_joint_state_broadcaster:
+    rbkk3_arm_joint_state_broadcaster:
         ros__parameters:
             joints:
                 - rbkk3/arm/joint_1
@@ -39,7 +39,7 @@
                 - rbkk3/arm/joint_6
                 - rbkk3/arm/joint_7
 
-    platform_joint_state_broadcaster:
+    rbkk3_platform_joint_state_broadcaster:
         ros__parameters:
             joints:
                 - rbkk3/platform/front_left_wheel
@@ -47,7 +47,7 @@
                 - rbkk3/platform/rear_left_wheel
                 - rbkk3/platform/rear_right_wheel
 
-    arm_joint_trajectory_controller:
+    rbkk3_arm_joint_trajectory_controller:
         ros__parameters:
             joints:
             - rbkk3/arm/joint_1
@@ -98,7 +98,7 @@
                     d: 10.0
                     i: 1.0
 
-    arm_effort_joint_controller:
+    rbkk3_arm_effort_joint_controller:
         ros__parameters:
             joints:
             - rbkk3/arm/joint_1
@@ -109,7 +109,7 @@
             - rbkk3/arm/joint_6
             - rbkk3/arm/joint_7
 
-    arm_twist_controller:
+    rbkk3_arm_twist_controller:
         ros__parameters:
             joint: tcp
             interface_names:
@@ -126,7 +126,7 @@
     #         joint: robotiq_85_left_knuckle_joint
     #         allow_stalling: true
 
-    platform_velocity_controller:
+    rbkk3_platform_velocity_controller:
         ros__parameters:
             use_sim_time: true
             command_joint_names: ["rbkk3/platform/front_left_wheel", "rbkk3/platform/rear_left_wheel", "rbkk3/platform/rear_right_wheel", "rbkk3/platform/front_right_wheel"]
