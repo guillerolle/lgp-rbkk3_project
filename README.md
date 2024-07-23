@@ -40,7 +40,7 @@ cd scripts
 ```
 This should allow you to run the Docker container now.
 
-# 2. Building third-party repositories
+## 2. Building third-party repositories
 Everytime you need to do changes to the repositories inside `official_repos` you will need to rebuild them manually. For this, you need to go launch the docker container with the help of the `start_docker_graphics.sh`script, navigate to the repositories and build them:
 ```
 $ cd scripts
@@ -74,7 +74,7 @@ colcon build
 ```
 ***Note: ***You should be able to do a `git diff` in `src/ros2_controllers` directory to see changes made to the official repository.
 
-# 3. Workspace Compilation
+## 3. Workspace Compilation
 Whenever you need to rebuild the `rbkk3-ros2ws` you can make use of the `build_workspace.sh`helper script from HOST machine.
 
 ```
@@ -84,7 +84,7 @@ cd scripts
 
 This will build the workspace with `--symlink-install` so that the data files (descriptions, launch files, configs, meshes, etc.) are symlinked to that of the `src`directory so you don't need to rebuild for every change you make. Only when new files are added or c++ code is modified that you need to rebuild.
 
-# 4. Starting container and Gazebo simulation
+## 4. Starting container and Gazebo simulation
 If you already built of the needed workspaces you can exit the container (just with an `exit` command on the terminal) and login again. This will make sure to correctly source the needed workspaces. You use the `start_docker_graphics.sh` helper script again to do so:
 
 ```
@@ -96,7 +96,7 @@ cd scripts
 ```
 This launch command should launch Gazebo simulator in a world with just 4 boxes (useful to test working of lidar sensor), spawn the mobile manipulator with effort command interfaces and spawn all required ROS2 nodes and launch rviz visualization. 
 
-# 5. Connect with another terminal to the current running container to control the robot
+## 5. Connect with another terminal to the current running container to control the robot
 To connect to the container with another terminal, you can make use of the helper script `connect_docker.sh` **after** launching `start_docker_graphics.sh` and in **another** terminal:
 ```
 cd scripts
@@ -108,7 +108,7 @@ cd scripts
 ```
 The `pub_*.sh` files just provide a quick way to publish a single message to test the robot's controllers. The command topics and reference values are hardcoded inside scripts, so some modification might be required.
 
-# 6. Launch rqt
+## 6. Launch rqt
 You can also connect another terminal and launch `rqt` to have some information about topics, controllers, tf trees, node trees, etc.
 ```
 cd scripts

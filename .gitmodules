@@ -1,0 +1,6 @@
+[submodule "official-repos/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers"]
+	path = official-repos/clearpath_mecanum_drive_controller-ros2ws/src/ros2_controllers
+	url = git@github.com:guillerolle/lgp-mecanum_drive_controller.git
+[submodule "official-repos/ros2_kortex-ros2ws/src/ros2_kortex"]
+	path = official-repos/ros2_kortex-ros2ws/src/ros2_kortex
+	url = git@github.com:guillerolle/lgp-ros2_kortex.git
