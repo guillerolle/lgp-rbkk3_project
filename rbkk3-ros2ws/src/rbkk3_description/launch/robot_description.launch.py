@@ -36,6 +36,9 @@ def generate_launch_description():
         default_value='false',
         description='Robot is Ignition Simulation'
     )
+    arg_use_effort_command_interfaces = DeclareLaunchArgument('use_effort_command_interfaces', default_value='false',
+        choices=['false', 'true'],
+        description='Spawn effort hardware interfaces for arm')
     # arg_urdf_spawn_controller_manager = DeclareLaunchArgument(
     #     'urdf_spawn_controller_manager',
     #     default_value='true',
@@ -46,6 +49,7 @@ def generate_launch_description():
     robot_name = LaunchConfiguration('robot_name')
     sim_ignition = LaunchConfiguration('sim_ignition')
     rsp_ns = LaunchConfiguration('rsp_ns')
+    use_effort_command_interfaces = LaunchConfiguration('use_effort_command_interfaces')
 
     use_sim_time = False
     if sim_ignition: # Do it this way to add other simulators in the if statement
@@ -66,13 +70,8 @@ def generate_launch_description():
             'use_prefix:=', 'true',
             ' ',
             'sim_ignition:=', sim_ignition,
-            # ' ',
-            # 'spawn_controller_manager:=', urdf_spawn_controller_manager,
-            # ' ',
-            # 'controllers_config:=',
-            # config_control,
-            #' ',
-            #'namespace:=', robot_namespace,
+            ' ',
+            'use_effort_command_interfaces:=', use_effort_command_interfaces,
         ]
         ),
         value_type=str
@@ -102,5 +101,6 @@ def generate_launch_description():
     ld.add_action(arg_robot_name)
     ld.add_action(arg_rsp_ns)
     ld.add_action(arg_sim_ignition)
+    ld.add_action(arg_use_effort_command_interfaces)
     ld.add_action(robot_state_publisher_node)
     return ld

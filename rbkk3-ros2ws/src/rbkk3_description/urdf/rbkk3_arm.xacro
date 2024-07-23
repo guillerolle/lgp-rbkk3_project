@@ -30,7 +30,8 @@
   <xacro:arg name="camera_width" default="640"/>
   <xacro:arg name="camera_height" default="480"/>
   <xacro:arg name="camera_fps" default="6"/>
-
+  <xacro:arg name="use_velocity_command_interfaces" default="false"/>
+  <xacro:arg name="use_effort_command_interfaces" default="false"/>
 
   <!-- import main macro -->
   <xacro:include filename="$(find kortex_description)/robots/kortex_robot.xacro" />

@@ -9,7 +9,9 @@
                 type: joint_state_broadcaster/JointStateBroadcaster
 
             # ARM CONTROLLERS
-            rbkk3_arm_joint_trajectory_controller:
+            rbkk3_arm_joint_trajectory_controller_position:
+                type: joint_trajectory_controller/JointTrajectoryController
+            rbkk3_arm_joint_trajectory_controller_effort:
                 type: joint_trajectory_controller/JointTrajectoryController
             rbkk3_arm_twist_controller:
                 type: picknik_twist_controller/PicknikTwistController
@@ -47,7 +49,29 @@
                 - rbkk3/platform/rear_left_wheel
                 - rbkk3/platform/rear_right_wheel
 
-    rbkk3_arm_joint_trajectory_controller:
+    rbkk3_arm_joint_trajectory_controller_position:
+        ros__parameters:
+            joints:
+            - rbkk3/arm/joint_1
+            - rbkk3/arm/joint_2
+            - rbkk3/arm/joint_3
+            - rbkk3/arm/joint_4
+            - rbkk3/arm/joint_5
+            - rbkk3/arm/joint_6
+            - rbkk3/arm/joint_7
+            command_interfaces:
+            - position
+            state_interfaces:
+            - position
+            - velocity
+            state_publish_rate: 100.0
+            action_monitor_rate: 20.0
+            allow_partial_joints_goal: false
+            constraints:
+                stopped_velocity_tolerance: 0.0
+                goal_time: 0.0
+
+    rbkk3_arm_joint_trajectory_controller_effort:
         ros__parameters:
             joints:
             - rbkk3/arm/joint_1

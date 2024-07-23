@@ -58,6 +58,9 @@ ARGUMENTS = [
                           description='Gazebo World'),
     DeclareLaunchArgument('robot_name', default_value='rbkk3',
                           description='Robot name'),
+    DeclareLaunchArgument('arm_cmd_if', default_value='position',
+                          choices=['position', 'effort'],
+                          description='Arm command interface type'),
 ]
 
 for pose_element in ['x', 'y', 'yaw']:
@@ -74,6 +77,8 @@ def launch_setup(context, *args, **kwargs):
     use_sim_time = LaunchConfiguration('use_sim_time')
     x, y, z = LaunchConfiguration('x'), LaunchConfiguration('y'), LaunchConfiguration('z')
     yaw = LaunchConfiguration('yaw')
+
+    arm_cmd_if = LaunchConfiguration('arm_cmd_if')
 
     robot_name = LaunchConfiguration('robot_name')
     namespace = robot_name
@@ -104,8 +109,8 @@ def launch_setup(context, *args, **kwargs):
         launch_arguments=[
             ('robot_name', robot_name),
             ('sim_ignition', 'true'),
-            #('urdf_spawn_controller_manager', 'false'),
             ('rsp_ns', namespace),
+            ('use_effort_command_interfaces', 'true' if arm_cmd_if.perform(context)=='effort' else 'false'),
         ]
     ) 
 
@@ -160,7 +165,7 @@ def launch_setup(context, *args, **kwargs):
         # Arm trajectory controller
         Node(package='controller_manager', executable='spawner',
             arguments=[
-                robot_name.perform(context) + '_arm_joint_trajectory_controller',
+                robot_name.perform(context) + '_arm_joint_trajectory_controller_' + arm_cmd_if.perform(context),
                 '-c', 'controller_manager',
                 #'-p', PathJoinSubstitution([pkg_rbkk3_description, 'config', 'platform_velocity_controller.yaml'])
             ],

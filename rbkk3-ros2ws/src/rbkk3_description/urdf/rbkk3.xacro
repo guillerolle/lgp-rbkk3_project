@@ -47,7 +47,10 @@
         sim_gazebo="$(arg sim_gazebo)"
         sim_ignition="$(arg sim_ignition)"
         sim_isaac="$(arg sim_isaac)"
-        initial_positions="${xacro.load_yaml(initial_positions_file)}" >
+        initial_positions="${xacro.load_yaml(initial_positions_file)}"
+        use_velocity_command_interfaces="$(arg use_velocity_command_interfaces)"
+        use_effort_command_interfaces="$(arg use_effort_command_interfaces)"
+        >
         <origin xyz="0 0 0.015" rpy="0 0 0"/>  <!-- position robot in the parent -->
     </xacro:kk.load_robot>
 
