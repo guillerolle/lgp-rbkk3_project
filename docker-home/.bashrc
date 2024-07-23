@@ -1,6 +1,6 @@
 #!/bin/bash
-echo SOURCEANDO .BASHRC...
-source ~/venvs/$(hostname)/$(id --user --name)-python310.venv/bin/activate
+echo SOURCING .BASHRC...
+#source ~/venvs/$(hostname)/$(id --user --name)-python310.venv/bin/activate
 source /opt/ros/humble/setup.bash;
 source ~/ros2_kortex-ros2ws/install/local_setup.bash
 source ~/clearpath_mecanum_drive_controller-ros2ws/install/local_setup.bash
