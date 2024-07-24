@@ -4,3 +4,6 @@
 [submodule "official-repos/ros2_kortex-ros2ws/src/ros2_kortex"]
 	path = official-repos/ros2_kortex-ros2ws/src/ros2_kortex
 	url = https://github.com/guillerolle/lgp-ros2_kortex.git
+[submodule "rbkk3-capella_ws"]
+	path = rbkk3-capella_ws
+	url = https://github.com/guillerolle/lgp-rbkk3_capella.git
