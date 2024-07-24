@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+mkdir "$(pwd)/../docker-sources/site-packages" "$(pwd)/../docker-sources/dist-packages" "$(pwd)/../docker-sources/share" # CREATE DIRS FOR MOUNTS
+
 docker volume create --driver local --opt type=none --opt device="$(pwd)/../docker-sources/site-packages" --opt o=bind rbkk3-docker-site &&\
 docker volume create --driver local --opt type=none --opt device="$(pwd)/../docker-sources/dist-packages" --opt o=bind rbkk3-docker-dist &&\
 docker volume create --driver local --opt type=none --opt device="$(pwd)/../docker-sources/share" --opt o=bind rbkk3-docker-share &&\
