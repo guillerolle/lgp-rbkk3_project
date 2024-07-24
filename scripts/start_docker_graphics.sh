@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 docker volume create --driver local --opt type=none --opt device="$(pwd)/../docker-sources/site-packages" --opt o=bind rbkk3-docker-site &&\
 docker volume create --driver local --opt type=none --opt device="$(pwd)/../docker-sources/dist-packages" --opt o=bind rbkk3-docker-dist &&\

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Este archivo compila el docker file
 
 cd ..
