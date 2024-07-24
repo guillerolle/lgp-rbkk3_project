@@ -1,5 +1,4 @@
-#!/bin/bash
-# Este archivo corre la calibracion en un docker
+#!/usr/bin/env bash
 
 xhost +local:root &&\
 docker run --rm -it --net=host --privileged --env="DISPLAY" --env="QT_X11_NO_MITSHM=1"\

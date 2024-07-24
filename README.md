@@ -38,7 +38,7 @@ The first step is to compile the Docker image with the `compile_docker.sh` helpe
 cd scripts   
 ./compile_docker.sh
 ```
-This should allow you to run the Docker container now.
+After a very large buch of packages being installed, you should be able to run the Docker container now. I'd rather install this lot of packages to be sure I don't miss anything while working and to avoid having to rebuild the image a lot of times.
 
 ## 2. Building third-party repositories
 Everytime you need to do changes to the repositories inside `official_repos` you will need to rebuild them manually. For this, you need to go launch the docker container with the help of the `start_docker_graphics.sh`script, navigate to the repositories and build them:
@@ -61,7 +61,7 @@ Now that we are inside Docker, we need to compile the third party workspaces:
 This is the official repository for the Kinova arm. Main changes were made to allow no-gripper configurations (as per the lab's robot configuration)
 ```
 cd ~/ros2_kortex-ros2ws
-# YOU SHOULD FOLLOW INSTRUCTIONS IN src/ros2_kortex/README.md. Steps 3 and 4 mainly.
+colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 ***Note: ***You should be able to do a `git diff` in `src/ros2_kortex` directory to see changes made to the official repository
 
@@ -95,6 +95,8 @@ cd scripts
 :~/rbkk3-ros2ws$ ros2 launch rbkk3_simulation simulation.launch.py rviz:=true world:=boxes arm_cmd_if:=effort
 ```
 This launch command should launch Gazebo simulator in a world with just 4 boxes (useful to test working of lidar sensor), spawn the mobile manipulator with effort command interfaces and spawn all required ROS2 nodes and launch rviz visualization. 
+
+**Note: ** sometimes the `tf` tree gets buggy on spawning. If in rviz you can only see the odom frame but not the robot, just kill the process with `ctrl+C` and restart.
 
 ## 5. Connect with another terminal to the current running container to control the robot
 To connect to the container with another terminal, you can make use of the helper script `connect_docker.sh` **after** launching `start_docker_graphics.sh` and in **another** terminal:
